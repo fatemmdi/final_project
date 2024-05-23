@@ -1,0 +1,115 @@
+@import "./variables";
+@import "./mixin";
+@import "./reset";
+@import "../fonts/font";
+
+
+.header {
+    @include container;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    background: $neutral-color-11;
+    margin-top: 50px;
+    // width: 1232px;
+    // gap: 457px;
+    // position: absolute;
+    // top: 24px;
+    // left: 104px;
+    // border: solid 1px black;
+    &_menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 72px;
+        // width: 516px;
+        // height: 31px;
+        &_list:link {
+            // position: absolute;
+            // width: 95px;
+            // height: 31px;
+            // left: 1100px;
+            // top: 5px;
+            font-size: 20px;
+            line-height: 31px;
+            color: #141414;
+            text-decoration: none;
+            font-family: 'Yekan Bakh FaNum';
+            font-style: normal;
+            font-weight: 600;            
+            cursor: pointer;
+        }
+        &_options{
+            display: flex;
+            gap: 72px;
+            // flex-direction: row;
+            // align-items: flex-start;
+            // width: 349px;
+            // height: 25px;
+            & > *{
+                height: 25px;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 25px;
+                text-align: right;
+                text-decoration: none;
+            }
+            &_main:link{
+                color: $primery-color;
+                width: 81px;
+            }
+            &_aboutUs:link{
+                color: $span_color_1;
+                width: 80px;
+            }
+            &_contactUs:link{
+                color: $span_color_1;
+                width: 80px;
+            }
+        }
+    }
+
+    &_button{
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        cursor: pointer;
+        // width: 223px;
+        // height: 40px;        
+        &_btn {
+            background-color: $primery-color;
+            color: $on-primery-light-color;
+            font-size: 16px;
+            border-radius: 6px;
+            width: 167px;
+            height: 40px;
+            text-align: center;
+            // padding: 1px 3px;
+            // gap: 8px;
+
+                }
+         &_btn:hover {
+                    background: $primery-hover-light-color;
+            }
+
+        &_mode {
+            border: 1px solid #E3E3E3;
+            border-radius: 6px;
+            height: 40px;
+            width: 40px;
+            position: relative;
+            // padding: 1px 1px;
+
+            &_img{   
+                position: absolute;   
+                top: 9px; 
+                right: 9px;       
+            }
+        }
+        &_mode:hover{
+            background: $neutral-color-7;
+         }
+    }
+}

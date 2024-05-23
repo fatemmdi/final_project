@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+  all: unset;
+}
+
+@font-face {
+  font-family: "Yekan Bakh FaNum", vazir;
+  src: url("./woff/YekanBakh-Regular.woff") format("woff"), url("./woff2/YekanBakh-Regular.woff2") format("woff2"), url("./vazir/Vazir.woff") format("woff");
+}
+.header {
+  margin: 0 auto;
+  max-width: 1390px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  background: #FFFFFF;
+  margin-top: 50px;
+}
+.header_menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 72px;
+}
+.header_menu_list:link {
+  font-size: 20px;
+  line-height: 31px;
+  color: #141414;
+  text-decoration: none;
+  font-family: "Yekan Bakh FaNum";
+  font-style: normal;
+  font-weight: 600;
+  cursor: pointer;
+}
+.header_menu_options {
+  display: flex;
+  gap: 72px;
+}
+.header_menu_options > * {
+  height: 25px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: right;
+  text-decoration: none;
+}
+.header_menu_options_main:link {
+  color: #2C7EF8;
+  width: 81px;
+}
+.header_menu_options_aboutUs:link {
+  color: #666666;
+  width: 80px;
+}
+.header_menu_options_contactUs:link {
+  color: #666666;
+  width: 80px;
+}
+.header_button {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+}
+.header_button_btn {
+  background-color: #2C7EF8;
+  color: #FFFFFF;
+  font-size: 16px;
+  border-radius: 6px;
+  width: 167px;
+  height: 40px;
+  text-align: center;
+}
+.header_button_btn:hover {
+  background: #075CD9;
+}
+.header_button_mode {
+  border: 1px solid #E3E3E3;
+  border-radius: 6px;
+  height: 40px;
+  width: 40px;
+  position: relative;
+}
+.header_button_mode_img {
+  position: absolute;
+  top: 9px;
+  right: 9px;
+}
+.header_button_mode:hover {
+  background: #E1E0E5;
+}/*# sourceMappingURL=header.css.map */

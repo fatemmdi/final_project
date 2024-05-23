@@ -1,0 +1,302 @@
+@import "./footer.css";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+  all: unset;
+}
+
+@font-face {
+  font-family: "Yekan Bakh FaNum", vazir;
+  src: url("./woff/YekanBakh-Regular.woff") format("woff"), url("./woff2/YekanBakh-Regular.woff2") format("woff2"), url("./vazir/Vazir.woff") format("woff");
+}
+.header {
+  margin: 0 auto;
+  max-width: 1390px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  background: #FFFFFF;
+  margin-top: 50px;
+}
+.header_menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 72px;
+}
+.header_menu_list:link {
+  font-size: 20px;
+  line-height: 31px;
+  color: #141414;
+  text-decoration: none;
+  font-family: "Yekan Bakh FaNum";
+  font-style: normal;
+  font-weight: 600;
+  cursor: pointer;
+}
+.header_menu_options {
+  display: flex;
+  gap: 72px;
+}
+.header_menu_options > * {
+  height: 25px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: right;
+  text-decoration: none;
+}
+.header_menu_options_main:link {
+  color: #666666;
+  width: 81px;
+}
+.header_menu_options_aboutUs:link {
+  color: #2C7EF8;
+  width: 80px;
+}
+.header_menu_options_contactUs:link {
+  color: #666666;
+  width: 80px;
+}
+.header_button {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+}
+.header_button_btn {
+  background-color: #2C7EF8;
+  color: #FFFFFF;
+  font-size: 16px;
+  border-radius: 6px;
+  width: 167px;
+  height: 40px;
+  text-align: center;
+}
+.header_button_btn:hover {
+  background: #075CD9;
+}
+.header_button_mode {
+  border: 1px solid #E3E3E3;
+  border-radius: 6px;
+  height: 40px;
+  width: 40px;
+  position: relative;
+}
+.header_button_mode_img {
+  position: absolute;
+  top: 9px;
+  right: 9px;
+}
+.header_button_mode:hover {
+  background: #E1E0E5;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1390px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  margin-top: 100px;
+}
+.container_discription {
+  display: flex;
+  flex-direction: column;
+  width: 548px;
+  height: 686px;
+  padding: 32px 40px;
+  gap: 24px;
+  background: #FFFFFF;
+  border: 1px solid #F5F6F8;
+  box-shadow: 0px 4px 63px rgba(0, 0, 0, 0.03);
+  border-radius: 24px;
+}
+.container_discription_title_aboutme {
+  color: #070D31;
+  font-family: "Abar Mid FaNum";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 72px;
+  text-align: start;
+}
+.container_discription_title_name {
+  font-family: "Abar Mid FaNum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 58px;
+  text-align: start;
+  color: #575757;
+}
+.container_discription_text_introduction {
+  font-family: "Yekan Bakh FaNum";
+  font-style: normal;
+  color: #444749;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: right;
+}
+.container_profile {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 548px;
+  height: 686px;
+}
+.container_profile_items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 20px 40px;
+  gap: 30px;
+  border: 1px solid #F5F6F8;
+  box-shadow: 0px 4px 63px rgba(0, 0, 0, 0.03);
+  border-radius: 24px;
+  background: #FFFFFF;
+}
+.container_profile_items_1 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  background: #F9FAFB;
+  border: 1px solid #F5F5F5;
+  border-radius: 16px;
+  height: 112px;
+}
+.container_profile_items_1_details {
+  font-family: "Yekan Bakh FaNum";
+  font-style: normal;
+  color: #070D31;
+  padding: 20px 20px 0px 0px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 50px;
+  text-align: right;
+}
+.container_profile_items_1_description {
+  padding: 5px 20px 0px 0px;
+  font-family: "Yekan Bakh FaNum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #707070;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  margin-top: 80px;
+}
+.footer_title {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.footer_title_name {
+  font-family: "Yekan Bakh FaNum";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 31px;
+  color: #141414;
+}
+.footer_body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 160px;
+  width: 1440px;
+}
+.footer_body_details {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.footer_body_details_ways {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+}
+.footer_body_details_ways_text {
+  font-family: "Yekan Bakh FaNum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: right;
+  color: #242424;
+}
+.footer_body_connection {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.footer_body_connection_text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.footer_body_connection_text_title {
+  font-family: "Yekan Bakh FaNum";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: right;
+  color: #242424;
+}
+.footer_body_connection_text_body {
+  width: 334px;
+  font-family: "Yekan Bakh FaNum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: right;
+  color: #242424;
+}
+.footer_body_connection_email {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.footer_body_connection_email_input {
+  border: 1px solid #A1A1A1;
+  border-radius: 10px;
+  padding: 10px 24px 10px 6px;
+}
+.footer_body_connection_email_btn {
+  padding: 5px 12px;
+  background: #037FFF;
+  border-radius: 8px;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 14px;
+  line-height: 16.5px;
+  font-family: "Yekan Bakh FaNum";
+  position: absolute;
+  left: 7px;
+  top: 6px;
+}
+.footer_body_connection_email_btn:hover {
+  background: #075CD9;
+  cursor: pointer;
+}/*# sourceMappingURL=aboutme.css.map */
