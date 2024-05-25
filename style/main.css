@@ -14,7 +14,7 @@ button {
 }
 .body {
   margin: 0 auto;
-  max-width: 1024px;
+  max-width: 1200px;
 }
 @media screen and (min-width: 360px) and (max-width: 480px) {
   .body {
@@ -22,19 +22,19 @@ button {
     max-width: 360px;
   }
 }
-.body .container_titles {
+.body_container_titles {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   gap: 80px;
 }
-.body .container_titles_background {
+.body_container_titles_background {
   display: flex;
   flex-direction: column;
   margin-top: 100px;
 }
-.body .container_titles_background_h3 {
+.body_container_titles_background_h3 {
   font-family: "Abar Mid FaNum";
   font-style: normal;
   font-weight: 400;
@@ -44,12 +44,12 @@ button {
   color: #141414;
 }
 @media screen and (min-width: 360px) and (max-width: 480px) {
-  .body .container_titles_background_h3 {
+  .body_container_titles_background_h3 {
     font-size: 24px;
     line-height: 43px;
   }
 }
-.body .container_titles_background_h1 {
+.body_container_titles_background_h1 {
   font-family: "Abar Mid FaNum";
   font-style: normal;
   font-weight: 900;
@@ -59,29 +59,29 @@ button {
   color: #141414;
 }
 @media screen and (min-width: 360px) and (max-width: 480px) {
-  .body .container_titles_background_h1 {
+  .body_container_titles_background_h1 {
     font-size: 28px;
     line-height: 50px;
   }
 }
-.body .container_titles_background_line {
+.body_container_titles_background_line {
   transform: rotate(360.28deg);
   position: relative;
   left: 70px;
   top: 5px;
 }
 @media screen and (min-width: 360px) and (max-width: 480px) {
-  .body .container_titles_background_line {
+  .body_container_titles_background_line {
     display: none;
   }
 }
-.body .container_titles_discription {
+.body_container_titles_discription {
   display: flex;
   flex-direction: column;
   text-align: center;
   gap: 40px;
 }
-.body .container_titles_discription_h4 {
+.body_container_titles_discription_h4 {
   font-family: "Yekan Bakh FaNum";
   font-style: normal;
   font-weight: 400;
@@ -90,47 +90,47 @@ button {
   color: #141414;
 }
 @media screen and (min-width: 360) and (max-width: 480px) {
-  .body .container_titles_discription_h4 {
+  .body_container_titles_discription_h4 {
     font-size: 12px;
     line-height: 19px;
     text-align: center;
   }
 }
-.body .container_titles_discription_btn {
+.body_container_titles_discription_btn {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
   gap: 16px;
 }
-.body .container_titles_discription_btn_btn {
+.body_container_titles_discription_btn_btn {
   background-color: #2C7EF8;
   color: #FFFFFF;
   padding: 8px 30px;
   height: 25px;
   border-radius: 8px;
 }
-.body .container_titles_discription_btn_btn:hover {
+.body_container_titles_discription_btn_btn:hover {
   background: #075CD9;
   cursor: pointer;
 }
-.body .container_titles_discription_btn_aboutUs {
+.body_container_titles_discription_btn_aboutUs {
   color: #2C7EF8;
   padding: 8px 40px;
   height: 25px;
   background: #EBF3FE;
   border-radius: 8px;
 }
-.body .container_titles_discription_btn_aboutUs:hover {
+.body_container_titles_discription_btn_aboutUs:hover {
   background: #E1E0E5;
   cursor: pointer;
 }
-.body .container {
+.body_container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.body .container_discription {
+.body_container_discription {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -138,23 +138,23 @@ button {
   gap: 124px;
 }
 @media screen and (min-width: 360px) and (max-width: 480px) {
-  .body .container_discription {
+  .body_container_discription {
     gap: 25px;
   }
 }
-.body .container_discription_image {
+.body_container_discription_image {
   margin-top: 40px;
   filter: drop-shadow(0px 0px 24px rgba(0, 0, 0, 0.05));
   border-radius: 12px 12px 0px 0px;
 }
 @media screen and (min-width: 360px) and (max-width: 480px) {
-  .body .container_discription_image {
+  .body_container_discription_image {
     max-width: 340px;
-    width: 50%;
+    width: 90%;
     height: auto;
   }
 }
-.body .container_discription_features {
+.body_container_discription_features {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -162,11 +162,11 @@ button {
   gap: 40px;
 }
 @media screen and (min-width: 360px) and (max-width: 480px) {
-  .body .container_discription_features {
+  .body_container_discription_features {
     gap: 10px;
   }
 }
-.body .container_discription_features_text {
+.body_container_discription_features_text {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -175,11 +175,11 @@ button {
   gap: 30px;
 }
 @media screen and (max-width: 360px) {
-  .body .container_discription_features_text {
+  .body_container_discription_features_text {
     gap: 2px;
   }
 }
-.body .container_discription_features_text_h2 {
+.body_container_discription_features_text_h2 {
   font-family: "Abar Mid FaNum";
   font-style: normal;
   font-weight: 600;
@@ -189,12 +189,12 @@ button {
   color: #191C1E;
 }
 @media screen and (min-width: 360px) and (max-width: 480px) {
-  .body .container_discription_features_text_h2 {
+  .body_container_discription_features_text_h2 {
     font-size: 20px;
     line-height: 72px;
   }
 }
-.body .container_discription_features_text_h4 {
+.body_container_discription_features_text_h4 {
   margin-bottom: 30px;
   font-family: "Yekan Bakh FaNum";
   font-style: normal;
@@ -205,13 +205,13 @@ button {
   color: #444749;
 }
 @media screen and (min-width: 360px) and (max-width: 480px) {
-  .body .container_discription_features_text_h4 {
+  .body_container_discription_features_text_h4 {
     font-size: 10px;
     line-height: 15px;
     width: 312px;
   }
 }
-.body .container_discription_features_items {
+.body_container_discription_features_items {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -221,11 +221,11 @@ button {
   max-width: 1440px;
 }
 @media screen and (min-width: 360px) and (max-width: 480px) {
-  .body .container_discription_features_items {
+  .body_container_discription_features_items {
     gap: 10px;
   }
 }
-.body .container_discription_features_items_1 {
+.body_container_discription_features_items_1 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -238,30 +238,30 @@ button {
   padding: 32px 32px 32px 32px;
 }
 @media screen and (min-width: 360px) and (max-width: 480px) {
-  .body .container_discription_features_items_1 {
+  .body_container_discription_features_items_1 {
     max-width: 440px;
     width: 40%;
     gap: 2px;
     padding: 5px 3px 5px 3px;
   }
 }
-.body .container_discription_features_items_1_logo {
+.body_container_discription_features_items_1_logo {
   display: block;
 }
 @media screen and (min-width: 360px) and (max-width: 480px) {
-  .body .container_discription_features_items_1_logo {
+  .body_container_discription_features_items_1_logo {
     display: none;
   }
 }
-.body .container_discription_features_items_1_logoR {
+.body_container_discription_features_items_1_logoR {
   display: none;
 }
 @media screen and (min-width: 360px) and (max-width: 480px) {
-  .body .container_discription_features_items_1_logoR {
+  .body_container_discription_features_items_1_logoR {
     display: block;
   }
 }
-.body .container_discription_features_items_1_titr {
+.body_container_discription_features_items_1_titr {
   font-family: "Abar Mid FaNum";
   font-style: normal;
   justify-content: center;
@@ -272,14 +272,14 @@ button {
   line-height: 36px;
 }
 @media screen and (min-width: 360px) and (max-width: 480px) {
-  .body .container_discription_features_items_1_titr {
+  .body_container_discription_features_items_1_titr {
     font-size: 12px;
     line-height: 18px;
     width: 75px;
     height: 32px;
   }
 }
-.body .container_discription_features_items_1_body {
+.body_container_discription_features_items_1_body {
   font-family: "Yekan Bakh FaNum";
   font-style: normal;
   text-align: center;
@@ -289,14 +289,14 @@ button {
   line-height: 30px;
 }
 @media screen and (min-width: 360px) and (max-width: 480px) {
-  .body .container_discription_features_items_1_body {
+  .body_container_discription_features_items_1_body {
     font-size: 10px;
     line-height: 16px;
     height: 65px;
     width: 88px;
   }
 }
-.body .container_discription_download {
+.body_container_discription_download {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -304,15 +304,15 @@ button {
   gap: 600px;
   margin-bottom: 20px;
 }
-.body .container_discription_download_images {
+.body_container_discription_download_images {
   position: relative;
 }
 @media screen and (min-width: 360px) and (max-width: 480px) {
-  .body .container_discription_download_images {
+  .body_container_discription_download_images {
     display: none;
   }
 }
-.body .container_discription_download_images_imgcover1 {
+.body_container_discription_download_images_imgcover1 {
   position: absolute;
   width: 537px;
   height: 370px;
@@ -321,14 +321,14 @@ button {
   border-radius: 26px;
   background: linear-gradient(118.11deg, #E5E7E8 22.44%, #E9EBF1 102.49%);
 }
-.body .container_discription_download_images_image1 {
+.body_container_discription_download_images_image1 {
   position: absolute;
   top: -163px;
   left: -20px;
   z-index: 1;
   border-radius: 25px;
 }
-.body .container_discription_download_images_imgcover2 {
+.body_container_discription_download_images_imgcover2 {
   position: absolute;
   width: 189.7px;
   height: 394px;
@@ -338,7 +338,7 @@ button {
   border-radius: 21px;
   z-index: 2;
 }
-.body .container_discription_download_images_image2 {
+.body_container_discription_download_images_image2 {
   position: absolute;
   top: -125px;
   left: 276px;
@@ -346,7 +346,7 @@ button {
   border: 0.7px 0px 0px 0px;
   z-index: 3;
 }
-.body .container_discription_download_text {
+.body_container_discription_download_text {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -354,15 +354,15 @@ button {
   gap: 19px;
 }
 @media screen and (min-width: 360px) and (max-width: 480px) {
-  .body .container_discription_download_text {
+  .body_container_discription_download_text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
   }
 }
-.body .container_discription_download_text_h5 {
+.body_container_discription_download_text_h5 {
   font-family: "Yekan Bakh FaNum";
   font-style: normal;
   text-align: right;
@@ -372,13 +372,14 @@ button {
   line-height: 30px;
 }
 @media screen and (min-width: 360px) and (max-width: 480px) {
-  .body .container_discription_download_text_h5 {
+  .body_container_discription_download_text_h5 {
     font-size: 10px;
     line-height: 15px;
     text-align: center;
+    height: 2px;
   }
 }
-.body .container_discription_download_text_titr {
+.body_container_discription_download_text_titr {
   font-family: "Abar Mid FaNum";
   font-style: normal;
   text-align: right;
@@ -388,21 +389,21 @@ button {
   line-height: 72px;
 }
 @media screen and (min-width: 360px) and (max-width: 480px) {
-  .body .container_discription_download_text_titr {
+  .body_container_discription_download_text_titr {
     font-size: 20px;
     line-height: 50px;
     text-align: center;
   }
 }
-.body .container_discription_download_text_imageR {
+.body_container_discription_download_text_imageR {
   display: none;
 }
 @media screen and (max-width: 360px) {
-  .body .container_discription_download_text_imageR {
+  .body_container_discription_download_text_imageR {
     display: block;
   }
 }
-.body .container_discription_download_text_body {
+.body_container_discription_download_text_body {
   width: 472px;
   font-family: "Yekan Bakh FaNum";
   text-align: right;
@@ -413,29 +414,58 @@ button {
   line-height: 30px;
 }
 @media screen and (min-width: 360px) and (max-width: 480px) {
-  .body .container_discription_download_text_body {
+  .body_container_discription_download_text_body {
     font-size: 10px;
     line-height: 15px;
     width: 312px;
     text-align: center;
   }
 }
-.body .container_discription_download_text_link {
+.body_container_discription_download_text_link {
   display: flex;
   justify-content: center;
   align-items: center;
+  justify-content: center;
   color: #2C7EF8;
   gap: 16px;
   cursor: pointer;
 }
-.body .container_discription_download_text_link_text {
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .body_container_discription_download_text_link {
+    gap: 10px;
+  }
+}
+.body_container_discription_download_text_link_text {
   font-family: "Yekan Bakh FaNum";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 28px;
 }
-.body .container_discription_comments {
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .body_container_discription_download_text_link_text {
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+  }
+}
+.body_container_discription_download_text_link_arrow {
+  display: block;
+}
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .body_container_discription_download_text_link_arrow {
+    display: none;
+  }
+}
+.body_container_discription_download_text_link_arrowR {
+  display: none;
+}
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .body_container_discription_download_text_link_arrowR {
+    display: block;
+  }
+}
+.body_container_discription_comments {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -443,18 +473,23 @@ button {
   gap: 48px;
 }
 @media screen and (min-width: 360px) and (max-width: 480px) {
-  .body .container_discription_comments {
+  .body_container_discription_comments {
     gap: 24px;
-    max-width: 240px;
   }
 }
-.body .container_discription_comments_titr {
+.body_container_discription_comments_titr {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 16px;
 }
-.body .container_discription_comments_titr_h2 {
+@media screen and (max-width: 360px) {
+  .body_container_discription_comments_titr {
+    gap: 12px;
+  }
+}
+.body_container_discription_comments_titr_h2 {
   font-family: "Abar Mid FaNum";
   font-style: normal;
   color: #191C1E;
@@ -462,8 +497,13 @@ button {
   font-size: 40px;
   line-height: 72px;
 }
-.body .container_discription_comments_titr_h4 {
-  width: 540px;
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .body_container_discription_comments_titr_h2 {
+    font-size: 20px;
+    height: 40px;
+  }
+}
+.body_container_discription_comments_titr_h4 {
   font-family: "Yekan Bakh FaNum";
   font-style: normal;
   font-weight: 400;
@@ -472,33 +512,77 @@ button {
   text-align: center;
   color: #444749;
 }
-.body .container_discription_comments_users {
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .body_container_discription_comments_titr_h4 {
+    font-size: 10px;
+    line-height: 15px;
+    width: 300px;
+  }
+}
+.body_container_discription_comments_users {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 26px;
 }
-.body .container_discription_comments_users_gp {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .body_container_discription_comments_users {
+    gap: 16px;
+    padding: 24px;
+    max-width: 560px;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    flex: 100%;
+  }
 }
-.body .container_discription_comments_users_gp_1 {
+.body_container_discription_comments_users_1 {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
   height: 340px;
-  width: 357px;
-  padding: 24px 32px;
+  flex: 25%;
   gap: 24px;
+  padding: 24px 32px;
   background: #FFFFFF;
   box-shadow: 0px 4px 63px rgba(0, 0, 0, 0.04);
   border-radius: 16px;
 }
-.body .container_discription_comments_users_gp_1_profile {
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .body_container_discription_comments_users_1 {
+    gap: 8px;
+    padding: 24px;
+    flex: 100%;
+    height: 270px;
+    width: 258px;
+  }
+}
+.body_container_discription_comments_users_1_profile {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   gap: 17px;
 }
-.body .container_discription_comments_users_gp_1_profile_text_name {
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .body_container_discription_comments_users_1_profile {
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .body_container_discription_comments_users_1_profile_img {
+    max-width: 48px;
+    height: auto;
+    width: 100%;
+  }
+}
+.body_container_discription_comments_users_1_profile_text {
+  text-align: right;
+  gap: 4px;
+}
+.body_container_discription_comments_users_1_profile_text_name {
   font-family: "Abar Mid FaNum";
   font-style: normal;
   color: #141414;
@@ -506,7 +590,13 @@ button {
   font-size: 15px;
   line-height: 27px;
 }
-.body .container_discription_comments_users_gp_1_profile_text_job {
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .body_container_discription_comments_users_1_profile_text_name {
+    font-size: 14px;
+    line-height: 25px;
+  }
+}
+.body_container_discription_comments_users_1_profile_text_job {
   font-family: "Yekan Bakh FaNum";
   font-style: normal;
   color: #5C5C5C;
@@ -514,7 +604,13 @@ button {
   font-size: 14px;
   line-height: 22px;
 }
-.body .container_discription_comments_users_gp_1_comment {
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .body_container_discription_comments_users_1_profile_text_job {
+    font-size: 12px;
+    line-height: 19px;
+  }
+}
+.body_container_discription_comments_users_1_comment {
   font-family: "Yekan Bakh FaNum";
   font-style: normal;
   text-align: right;
@@ -524,16 +620,9 @@ button {
   line-height: 25px;
   overflow: hidden;
 }
-.body .container_discription_comments_icon {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 20px;
-}
-.body .container_discription_comments_icon > * {
-  background: #FFFFFF;
-  border: 1px solid #E3E6E8;
-  border-radius: 6px;
-  padding: 5px;
-  cursor: pointer;
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .body_container_discription_comments_users_1_comment {
+    font-size: 12px;
+    line-height: 19px;
+  }
 }/*# sourceMappingURL=main.css.map */
