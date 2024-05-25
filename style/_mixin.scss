@@ -1,5 +1,10 @@
 @import "./variables";
 
+@mixin full_container{
+    margin: 0 auto;
+    max-width: $screen-xl;  
+}
+
 @mixin container {
     margin: 0 auto;
     max-width: $screen-lg;

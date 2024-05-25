@@ -14,7 +14,7 @@ button {
 }
 .header {
   margin: 0 auto;
-  max-width: 1390px;
+  max-width: 1200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,6 +29,15 @@ button {
   align-items: center;
   gap: 72px;
 }
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .header_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 92px;
+  }
+}
 .header_menu_list:link {
   font-size: 20px;
   line-height: 31px;
@@ -39,9 +48,31 @@ button {
   font-weight: 600;
   cursor: pointer;
 }
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .header_menu_list:link {
+    text-align: center;
+    font-size: 16spx;
+    line-height: 25px;
+  }
+}
+.header_menu_icon {
+  display: none;
+}
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .header_menu_icon {
+    display: flex;
+    align-self: center;
+    align-items: center;
+  }
+}
 .header_menu_options {
   display: flex;
   gap: 72px;
+}
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .header_menu_options {
+    display: none;
+  }
 }
 .header_menu_options > * {
   height: 25px;
@@ -68,6 +99,11 @@ button {
   align-items: center;
   gap: 16px;
   cursor: pointer;
+}
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .header_button {
+    display: none;
+  }
 }
 .header_button_btn {
   background-color: #2C7EF8;

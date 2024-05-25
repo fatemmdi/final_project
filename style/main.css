@@ -14,7 +14,7 @@ button {
 }
 .body {
   margin: 0 auto;
-  max-width: 1390px;
+  max-width: 1024px;
 }
 .body .container_titles {
   display: flex;
@@ -118,7 +118,6 @@ button {
 }
 .body .container_discription_image {
   margin-top: 40px;
-  height: 672px;
   filter: drop-shadow(0px 0px 24px rgba(0, 0, 0, 0.05));
   border-radius: 12px 12px 0px 0px;
 }
@@ -191,42 +190,42 @@ button {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  gap: 600px;
+  margin-bottom: 20px;
+}
+.body .container_discription_download_images {
   position: relative;
 }
-.body .container_discription_download_imgcover1 {
+.body .container_discription_download_images_imgcover1 {
   position: absolute;
-  width: 535px;
-  height: 350px;
-  top: 10px;
-  left: 10px;
+  width: 537px;
+  height: 370px;
+  top: -160px;
+  left: -18px;
   border-radius: 26px;
   background: linear-gradient(118.11deg, #E5E7E8 22.44%, #E9EBF1 102.49%);
 }
-.body .container_discription_download_image1 {
+.body .container_discription_download_images_image1 {
   position: absolute;
-  width: 530px;
-  height: 350px;
-  top: 10px;
-  left: 12px;
+  top: -163px;
+  left: -20px;
   z-index: 1;
   border-radius: 25px;
 }
-.body .container_discription_download_imgcover2 {
+.body .container_discription_download_images_imgcover2 {
   position: absolute;
   width: 189.7px;
   height: 394px;
-  top: 50px;
-  left: 290px;
+  top: -130px;
+  left: 270px;
   background: linear-gradient(118.11deg, #E5E7E8 22.44%, #E9EBF1 102.49%);
   border-radius: 21px;
   z-index: 2;
 }
-.body .container_discription_download_image2 {
+.body .container_discription_download_images_image2 {
   position: absolute;
-  width: 175px;
-  height: 380px;
-  top: 58px;
-  left: 298px;
+  top: -125px;
+  left: 276px;
   border-radius: 17px;
   border: 0.7px 0px 0px 0px;
   z-index: 3;
@@ -234,9 +233,9 @@ button {
 .body .container_discription_download_text {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: end;
-  gap: 10px;
-  height: 390px;
+  gap: 19px;
 }
 .body .container_discription_download_text_h5 {
   font-family: "Yekan Bakh FaNum";

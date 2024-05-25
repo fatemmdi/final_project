@@ -52,7 +52,11 @@ $Extra_Bold : 800;
 // $screen-lg : 1024px;
 // $screen-xl : 1368px;
 
-$screen-sm : 576px;
-$screen-md : 768px;
-$screen-lg : 1390px;
-$screen-xl : 1440px;
+// Small tablets and large smartphones (landscape view)
+$screen-sm: 480px;
+// Small tablets (portrait view)
+$screen-md: 768px;
+// Tablets and small desktops
+$screen-lg: 1024px;
+// Large tablets and desktops
+$screen-xl: 1200px;

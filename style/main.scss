@@ -11,9 +11,6 @@
         align-items: center;
         text-align: center;
         gap: 80px;
-        // position: relative;
-        // top: 200px;
-        // left: 0px;
         &_background{
             display: flex;
             flex-direction: column;
@@ -30,9 +27,6 @@
                 line-height: 83px;
                 text-align: center;
                 color: $title_color_1;            
-                // position: absolute;
-                // left: 505.5px;
-                // top: 201.5px;
             }
             &_h1{
                 font-family: 'Abar Mid FaNum';
@@ -42,9 +36,6 @@
                 line-height: 115px;
                 text-align: center;
                 color: $title_color_1;            
-                // position: absolute;
-                // left: 377px;
-                // top: 285px;
             }
     
             &_line{
@@ -73,9 +64,6 @@
             text-align: center;
             gap: 40px;
             &_h4{
-                // position: absolute;
-                // left: 307px;
-                // top: 487px;
                 width: 827px;
                 font-family: 'Yekan Bakh FaNum';
                 font-style: normal;
@@ -150,7 +138,7 @@
         &_image{
         //  width: 1120px;
          margin-top: 40px;
-         height: 672px;
+        //  height: 672px;
          filter: drop-shadow(0px 0px 24px rgba(0, 0, 0, 0.05));
          border-radius: 12px 12px 0px 0px;
         }
@@ -249,58 +237,58 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            position: relative;
-            // gap: 80px;
-            // width: 1120px;
-            // height: 427px;
-            // border: 1px solid black;
-            &_imgcover1{
+            gap: 600px;
+            margin-bottom: 20px;
+
+            &_images {
+                position: relative;
+              &_imgcover1{
                 position: absolute;
-                width: 535px;
-                height: 350px;
-                top: 10px;
-                left: 10px;
+                width: 537px;
+                height: 370px;
+                top: -160px;
+                left: -18px;
                 border-radius: 26px;
                 background: linear-gradient(118.11deg, #E5E7E8 22.44%, #E9EBF1 102.49%);
-            }
-            &_image1{
+              }
+              &_image1{
                 position: absolute;
-                width: 530px;
-                height: 350px;
-                top: 10px;
-                left: 12px;
+                // width: 530px;
+                // height: 350px;
+                top: -163px;
+                left: -20px;
                 z-index: 1;
                 border-radius: 25px;
                     }
 
-            &_imgcover2{
+               &_imgcover2{
                     position: absolute;
-                     width: 189.7px;
-                     height: 394px;
-                     top: 50px;
-                     left: 290px;
+                    width: 189.7px;
+                    height: 394px;
+                    top: -130px;
+                    left: 270px;
                      background: linear-gradient(118.11deg, #E5E7E8 22.44%, #E9EBF1 102.49%);
                      border-radius: 21px;  
                      z-index: 2;  
                 }
-            &_image2{
+               &_image2{
                     position: absolute;
-                    width: 175px;
-                    height: 380px;
-                    top: 58px;
-                    left: 298px;
+                    // width: 175px;
+                    // height: 380px;
+                    top: -125px;
+                    left: 276px;
                     border-radius: 17px;
                     border: 0.7px 0px 0px 0px;   
                     z-index: 3;       
                 }
+            }
 
             &_text {
                 display: flex;
                 flex-direction: column;
+                justify-content: center;
                 align-items: end;
-                gap: 10px;
-                height: 390px;
-                // width: 540px;
+                gap: 19px;
 
                 &_h5{
                 //  width: 540px;

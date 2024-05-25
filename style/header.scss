@@ -5,18 +5,13 @@
 
 
 .header {
-    @include container;
+    @include full_container;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 40px;
     background: $neutral-color-11;
     margin-top: 50px;
-    // width: 1232px;
-    // gap: 457px;
-    // position: absolute;
-    // top: 24px;
-    // left: 104px;
     // border: solid 1px black;
     &_menu{
         display: flex;
@@ -24,14 +19,15 @@
         justify-content: flex-end;
         align-items: center;
         gap: 72px;
-        // width: 516px;
-        // height: 31px;
+        @media screen and (min-width: 360px) and (max-width:480px) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 92px;   
+        }
+
         &_list:link {
-            // position: absolute;
-            // width: 95px;
-            // height: 31px;
-            // left: 1100px;
-            // top: 5px;
             font-size: 20px;
             line-height: 31px;
             color: #141414;
@@ -40,14 +36,31 @@
             font-style: normal;
             font-weight: 600;            
             cursor: pointer;
+            @media screen and (min-width: 360px) and (max-width: 480px){
+                text-align: center;
+                font-size: 16spx;
+                line-height: 25px;                
+               }
         }
+
+        &_icon {
+            display: none;
+            @media screen and (min-width: 360px) and (max-width: 480px){
+             display: flex;
+             align-self: center;
+             align-items: center;
+             // gap: 100px;
+            }
+         }
+
         &_options{
+            @media screen and (min-width: 360px) and (max-width: 480px) {
+                display: none;
+            }
             display: flex;
             gap: 72px;
             // flex-direction: row;
             // align-items: flex-start;
-            // width: 349px;
-            // height: 25px;
             & > *{
                 height: 25px;
                 font-weight: 600;
@@ -72,12 +85,13 @@
     }
 
     &_button{
+        @media screen and (min-width: 360px) and (max-width: 480px) {
+            display: none;
+        }
         display: flex;
         align-items: center;
         gap: 16px;
-        cursor: pointer;
-        // width: 223px;
-        // height: 40px;        
+        cursor: pointer;      
         &_btn {
             background-color: $primery-color;
             color: $on-primery-light-color;
