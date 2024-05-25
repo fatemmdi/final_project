@@ -4,6 +4,9 @@
 @import "../fonts/font";
 
 .body{
+    @media screen and (min-width: 360px) and (max-width: 480px) {
+        @include container_mobile;
+    }
     @include container;
     .container_titles{
         display: flex;
@@ -26,7 +29,11 @@
                 font-size: 46px;
                 line-height: 83px;
                 text-align: center;
-                color: $title_color_1;            
+                color: $title_color_1; 
+                @media screen and (min-width: 360px) and (max-width: 480px) {
+                    font-size: 24px;
+                    line-height: 43px;                    
+                }              
             }
             &_h1{
                 font-family: 'Abar Mid FaNum';
@@ -35,7 +42,11 @@
                 font-size: 64px;
                 line-height: 115px;
                 text-align: center;
-                color: $title_color_1;            
+                color: $title_color_1;  
+                @media screen and (min-width: 360px) and (max-width:480px){
+                    font-size: 28px;
+                    line-height: 50px;                  
+                }            
             }
     
             &_line{
@@ -43,19 +54,32 @@
                 position:relative;    
                 left: 70px;
                 top: 5px;
+                @media screen and (min-width: 360px) and (max-width: 480px){
+                    display: none;                  
+                 }
             }
 
-            &_star1{
-                position: absolute;
-                right: 1600px;
-                top: 180px;             
-            }
+            // &_line1{
+            //     display: none;
+            //     @media screen and (min-width: 360px) and (max-width: 480px){
+            //        display: flex;    
+            //        position: absolute;
+            //        left: 150px;
+            //        top: 280px;                                 
+            //     }
+            // }
 
-            &_star2{
-                position: absolute;
-                left: 1500px;
-                top: 400px;          
-            }
+            // &_star1{
+            //     position: absolute;
+            //     right: 1600px;
+            //     top: 180px;             
+            // }
+
+            // &_star2{
+            //     position: absolute;
+            //     left: 1500px;
+            //     top: 400px;          
+            // }
         }
         
         &_discription{
@@ -64,19 +88,24 @@
             text-align: center;
             gap: 40px;
             &_h4{
-                width: 827px;
+                // width: 827px;
                 font-family: 'Yekan Bakh FaNum';
                 font-style: normal;
                 font-weight: 400;
                 font-size: 20px;
                 line-height: 31px;
                 color: $title_color_1;
+                @media screen and (min-width:360) and (max-width: 480px) {
+                    font-size: 12px;
+                    line-height: 19px;
+                    text-align: center;               
+                }
             }
             &_btn{
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
-                align-items: center;
+                align-items: flex-start;
                 gap: 16px;
                 // position: absolute;
                 // left: 522.5px;
@@ -115,104 +144,147 @@
     flex-direction: column;
     align-items: center;
     // margin-top: 300px;
-    // gap: 3000px;
-    // position: absolute;
-    // width: 1120px;
-    // height: 2809px;
-    // left: 160px;
-    // top: 717px;
     // border: solid 1px black;
 
     &_discription{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         gap: 124px;
-        // position: absolute;
-        // top: 800px;
+        @media screen and (min-width: 360px) and (max-width: 480px) {  
+            gap: 25px;
+             }
         // border: solid 1px black;
-        // left: 160px;
-        // width: 1120px;
-        // height: 2809px;
-        // align-items: flex-start;
 
         &_image{
-        //  width: 1120px;
          margin-top: 40px;
-        //  height: 672px;
          filter: drop-shadow(0px 0px 24px rgba(0, 0, 0, 0.05));
          border-radius: 12px 12px 0px 0px;
+         @media screen and (min-width: 360px) and (max-width: 480px){  
+            max-width: 340px;
+            width: 50%;
+            height: auto;  
+         }
         }
+
         &_features{
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            gap: 20px;
-            // width: 1120px;
-            // height: 450px;
-            // border: solid 1px black;
-            &_h2{
-             width: 508px;
-            //  height: 72px;
-             font-family: 'Abar Mid FaNum';
-             font-style: normal;
-             font-weight: 600;
-             font-size: 40px;
-             line-height: 72px;
-             text-align: center;
-             color: $on-background-light-color;
+            gap: 40px;
+            @media screen and (min-width: 360px) and (max-width: 480px) {
+                gap: 10px;                  
+               }
 
+            &_text{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;   
+                gap: 30px;
+                // width: 540px;
+                @media screen and (max-width: 360px) {
+                    // width: 312px;          
+                    gap: 2px; 
+                 }
+
+                &_h2{
+                 font-family: 'Abar Mid FaNum';
+                 font-style: normal;
+                 font-weight: 600;
+                 font-size: 40px;
+                 line-height: 72px;
+                 text-align: center;
+                 color: $on-background-light-color;
+                 @media screen and (min-width: 360px) and (max-width: 480px) {
+                    font-size: 20px;
+                    line-height: 72px;              
+                 }
+                }
+
+                &_h4{
+                 margin-bottom: 30px;
+                 font-family: 'Yekan Bakh FaNum';
+                 font-style: normal;
+                 font-weight: 400;
+                 font-size: 18px;
+                 line-height: 30px;
+                 text-align: center;
+                 color: $text_color_1;
+                 @media screen and (min-width: 360px) and (max-width: 480px) {
+                    font-size: 10px;
+                    line-height: 15px;
+                    width: 312px;                    
+                 }
+                }
             }
-            &_h4{
-             width: 540px;
-            //  height: 60px;
-             margin-bottom: 30px;
-             font-family: 'Yekan Bakh FaNum';
-             font-style: normal;
-             font-weight: 400;
-             font-size: 18px;
-             line-height: 30px;
-             text-align: center;
-             color: $text_color_1;
-            }
+        
             &_items{
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
                 align-items: center;
+                flex-wrap: wrap;
                 gap: 20px;
+                max-width: 1440px;
+                @media screen and (min-width: 360px) and (max-width: 480px) {
+                    gap: 10px;
+                }
                 
                 &_1{
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    gap: 24px;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 10px;
                     border: 1px solid $neutral-color-9;
                     border-radius: 24px;
-                    padding: 32px 40px;
-                    width: 262px;
-                    height: 266px;   
+                    width: 20%;
+                    padding: 32px 32px 32px 32px; 
+                    // width: 262px;
+                    // height: 266px;  
+                    @media screen and (min-width: 360px) and (max-width: 480px) {
+                       max-width: 440px;
+                       width: 40%;   
+                       gap: 2px;  
+                       padding: 5px 3px 5px 3px;           
+                     }
 
-                    // &_logo{
-                    //     display: flex;
-                    //     flex-direction: column;
-                    //     justify-content: center;
-                    //     align-items: center; 
-                    //     gap: 8px;
-                    //     background: #F5FBFF;
-                    //     border-radius: 80px;     
-                    // }
+                     &_logo {
+                        display: block;
+                        @media screen and (min-width: 360px) and (max-width: 480px){
+                            display: none;
+                        }
+                     }
+
+                     &_logoR {
+                        display: none;
+                        @media screen and (min-width: 360px) and (max-width: 480px){
+                            display: block;
+                        }
+                     }
 
                     &_titr{
                         // width: 142px;
                         // height: 36px;
                         font-family: 'Abar Mid FaNum';
                         font-style: normal;
+                        justify-content: center;
                         color: $unimportant_text_color_1;
                         text-align: center;
                         font-weight: 700;
                         font-size: 20px;
                         line-height: 36px;
+                        @media screen and (min-width: 360px) and (max-width: 480px){
+                            font-size: 12px;
+                            line-height: 18px; 
+                            width: 75px;
+                            height: 32px;                           
+                          }
                     }
 
                     &_body{
@@ -225,6 +297,12 @@
                         font-weight: 400;
                         font-size: 14px;
                         line-height: 30px;
+                        @media screen and (min-width: 360px) and (max-width: 480px){
+                            font-size: 10px;
+                            line-height: 16px;     
+                            height: 65px;     
+                            width: 88px;                  
+                          }
                     }
                 }
 
@@ -242,6 +320,9 @@
 
             &_images {
                 position: relative;
+                @media screen and (min-width: 360px) and (max-width: 480px){
+                    display: none;
+                }
               &_imgcover1{
                 position: absolute;
                 width: 537px;
@@ -289,6 +370,13 @@
                 justify-content: center;
                 align-items: end;
                 gap: 19px;
+                @media screen and (min-width: 360px) and (max-width: 480px) {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 8px;
+                }
 
                 &_h5{
                 //  width: 540px;
@@ -300,9 +388,14 @@
                  font-weight: 400;
                  font-size: 18px;
                  line-height: 30px;
+                 @media screen and (min-width: 360px) and (max-width: 480px) {
+                    font-size: 10px;
+                    line-height: 15px;
+                    text-align: center;  
+                 }
                 }
                 &_titr{
-                    width: 267px;
+                    // width: 267px;
                     // height: 72px;
                     font-family: 'Abar Mid FaNum';
                     font-style: normal;
@@ -311,11 +404,23 @@
                     font-weight: 700;
                     font-size: 40px;
                     line-height: 72px;
+                    @media screen and (min-width: 360px) and (max-width: 480px) {
+                        font-size: 20px;
+                        line-height: 50px;
+                        text-align: center;  
+                     }
+                }
+
+                &_imageR{
+                    display: none;
+                    @media screen and (max-width:360px) {
+                        display: block;
+                    }
                 }
 
                 &_body{
-                    width: 472px;
                     // height: 180px;
+                    width: 472px;
                     font-family: 'Yekan Bakh FaNum';
                     text-align: right;
                     color: $text_color_1;                    
@@ -323,7 +428,14 @@
                     font-weight: 400;
                     font-size: 18px;
                     line-height: 30px;
+                    @media screen and (min-width: 360px) and (max-width: 480px) {
+                        font-size: 10px;
+                        line-height: 15px;
+                        width: 312px;
+                        text-align: center;  
+                     }
                 }
+
                 &_link{
                     display: flex;
                     justify-content: center;
@@ -353,6 +465,10 @@
             gap: 48px;
             // width: 1120px;
             // height: 888px;
+            @media screen and (min-width: 360px) and (max-width: 480px) {
+                gap: 24px;  
+                max-width: 240px;
+            }
 
             &_titr{
                 display: flex;

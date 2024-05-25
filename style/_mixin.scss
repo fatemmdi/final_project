@@ -9,3 +9,13 @@
     margin: 0 auto;
     max-width: $screen-lg;
 }
+
+@mixin full_container_mobile{
+    margin: 0 auto;
+    max-width: $screen-sm;  
+}
+
+@mixin container_mobile {
+    margin: 0 auto;
+    max-width: 360px;
+}

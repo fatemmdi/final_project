@@ -5,6 +5,9 @@
 
 
 .header {
+    @media screen and (min-width: 360px) and (max-width: 480px) {
+        @include container_mobile;
+    }
     @include full_container;
     display: flex;
     justify-content: space-between;
@@ -38,8 +41,10 @@
             cursor: pointer;
             @media screen and (min-width: 360px) and (max-width: 480px){
                 text-align: center;
-                font-size: 16spx;
-                line-height: 25px;                
+                font-size: 16px;
+                line-height: 25px;        
+                position: relative; 
+                right: 40px;       
                }
         }
 

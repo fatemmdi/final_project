@@ -22,6 +22,12 @@ button {
   background: #FFFFFF;
   margin-top: 50px;
 }
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .header {
+    margin: 0 auto;
+    max-width: 360px;
+  }
+}
 .header_menu {
   display: flex;
   flex-direction: row;
@@ -51,8 +57,10 @@ button {
 @media screen and (min-width: 360px) and (max-width: 480px) {
   .header_menu_list:link {
     text-align: center;
-    font-size: 16spx;
+    font-size: 16px;
     line-height: 25px;
+    position: relative;
+    right: 40px;
   }
 }
 .header_menu_icon {
