@@ -488,7 +488,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
+            // justify-content: center;
             gap: 48px;
             @media screen and (min-width: 360px) and (max-width: 480px) {
                 gap: 24px;  
@@ -556,7 +556,7 @@
                     flex: 100%;
                 }
 
-                  &_1{
+                  &_card{
                     display: flex;
                     flex-direction: column;
                     align-items: flex-start;
@@ -569,6 +569,7 @@
                     background: $neutral-color-11;
                     box-shadow: 0px 4px 63px rgba(0, 0, 0, 0.04);
                     border-radius: 16px;
+                    
 
                     @media screen and (min-width: 360px) and (max-width: 480px) {
                          gap: 8px;
@@ -651,30 +652,31 @@
                     }
                   }
                 } 
-            }
+        }
 
-            // &_icon{
-            //     display: flex;
-            //     flex-direction: row;
-            //     align-items: center;
-            //     justify-content: center;
-            //     gap: 200px;
-            //     // width: 104px;
-            //     // height: 40px;
-            //     display: none;
+            &_icon{
+                // display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 200px;
+                width: 1404px;
+                height: 400px;
+                // display: none;
                 
-            //     & > *{
-            //         // gap: 10px;
-            //         // width: 40px;
-            //         // height: 40px;
-            //         background: $surface-light-color;
-            //         border: 1px solid #E3E6E8;
-            //         border-radius: 6px;
-            //         padding: 5px;
-            //         cursor: pointer; 
+                & > *{
+                    gap: 10px;
+                    width: 40px;
+                    height: 40px;
+                    background: $surface-light-color;
+                    border: 1px solid #E3E6E8;
+                    border-radius: 6px;
+                    padding: 5px;
+                    cursor: pointer; 
 
-            //     }
-            // }
+                }
+            }
         }
     }
 

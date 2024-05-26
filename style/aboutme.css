@@ -23,6 +23,12 @@ button {
   background: #FFFFFF;
   margin-top: 50px;
 }
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .header {
+    margin: 0 auto;
+    max-width: 360px;
+  }
+}
 .header_menu {
   display: flex;
   flex-direction: row;
@@ -52,8 +58,10 @@ button {
 @media screen and (min-width: 360px) and (max-width: 480px) {
   .header_menu_list:link {
     text-align: center;
-    font-size: 16spx;
+    font-size: 16px;
     line-height: 25px;
+    position: relative;
+    right: 40px;
   }
 }
 .header_menu_icon {
@@ -144,6 +152,12 @@ button {
   gap: 24px;
   margin-top: 100px;
 }
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .container {
+    flex-direction: column;
+    gap: 14px;
+  }
+}
 .container_discription {
   display: flex;
   flex-direction: column;
@@ -189,6 +203,7 @@ button {
   gap: 24px;
   width: 548px;
   height: 686px;
+  order: 1;
 }
 .container_profile_items {
   display: grid;
@@ -233,16 +248,38 @@ button {
 }
 
 .footer {
+  margin: 0 auto;
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 48px;
   margin-top: 80px;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .footer {
+    margin: 0 auto;
+    max-width: 360px;
+  }
+}
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .footer {
+    gap: 30px;
+    margin-top: 80px;
+  }
 }
 .footer_title {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 20px;
+}
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .footer_title {
+    gap: 8px;
+  }
 }
 .footer_title_name {
   font-family: "Yekan Bakh FaNum";
@@ -252,24 +289,92 @@ button {
   line-height: 31px;
   color: #141414;
 }
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .footer_title_name {
+    font-size: 16px;
+    line-height: 29px;
+  }
+}
+.footer_title_line {
+  display: block;
+}
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .footer_title_line {
+    display: none;
+  }
+}
+.footer_title_lineR {
+  display: none;
+}
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .footer_title_lineR {
+    display: block;
+  }
+}
 .footer_body {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: start;
   align-items: center;
-  padding: 0px 160px;
-  width: 1440px;
+  padding: 0px 16px;
+  gap: 250px;
+}
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .footer_body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 32px;
+  }
 }
 .footer_body_details {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 24px;
+}
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .footer_body_details {
+    order: 2;
+    gap: 16px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer_body_details_ways:last-child {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    flex-direction: column;
+  }
 }
 .footer_body_details_ways {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 24px;
+}
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .footer_body_details_ways {
+    background: #FFFFFF;
+    border: 1px solid #F5F6F8;
+    border-radius: 16px;
+    gap: 8px;
+    padding: 8px 4px;
+  }
+}
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .footer_body_details_ways_logo {
+    display: none;
+  }
+}
+.footer_body_details_ways_logoR {
+  display: none;
+}
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .footer_body_details_ways_logoR {
+    display: block;
+  }
 }
 .footer_body_details_ways_text {
   font-family: "Yekan Bakh FaNum";
@@ -280,6 +385,12 @@ button {
   text-align: right;
   color: #242424;
 }
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .footer_body_details_ways_text {
+    font-size: 10px;
+    line-height: 16px;
+  }
+}
 .footer_body_connection {
   display: flex;
   flex-direction: column;
@@ -288,6 +399,8 @@ button {
 .footer_body_connection_text {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: start;
   gap: 12px;
 }
 .footer_body_connection_text_title {
@@ -299,8 +412,13 @@ button {
   text-align: right;
   color: #242424;
 }
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .footer_body_connection_text_title {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
 .footer_body_connection_text_body {
-  width: 334px;
   font-family: "Yekan Bakh FaNum";
   font-style: normal;
   font-weight: 400;
@@ -308,6 +426,12 @@ button {
   line-height: 25px;
   text-align: right;
   color: #242424;
+}
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .footer_body_connection_text_body {
+    font-size: 12px;
+    line-height: 19px;
+  }
 }
 .footer_body_connection_email {
   display: flex;
@@ -318,6 +442,12 @@ button {
   border: 1px solid #A1A1A1;
   border-radius: 10px;
   padding: 10px 24px 10px 6px;
+}
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .footer_body_connection_email_input {
+    width: 328px;
+    height: 40px;
+  }
 }
 .footer_body_connection_email_btn {
   padding: 5px 12px;
@@ -335,4 +465,19 @@ button {
 .footer_body_connection_email_btn:hover {
   background: #075CD9;
   cursor: pointer;
+}
+.footer_index {
+  font-family: "Yekan Bakh FaNum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: right;
+  color: #666666;
+}
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .footer_index {
+    font-size: 12px;
+    line-height: 19px;
+  }
 }/*# sourceMappingURL=aboutme.css.map */

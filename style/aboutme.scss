@@ -9,6 +9,9 @@
 
 // ------------------header----------------
 .header {
+    @media screen and (min-width: 360px) and (max-width: 480px) {
+        @include container_mobile;
+    }
     @include full_container;
     display: flex;
     justify-content: space-between;
@@ -42,8 +45,10 @@
             cursor: pointer;
             @media screen and (min-width: 360px) and (max-width: 480px){
                 text-align: center;
-                font-size: 16spx;
-                line-height: 25px;                
+                font-size: 16px;
+                line-height: 25px;        
+                position: relative; 
+                right: 40px;       
                }
         }
 
@@ -141,12 +146,11 @@
     align-items: flex-start;
     gap: 24px;
     margin-top: 100px;
-    // position: absolute;
-    // width: 1120px;
-    // height: 686px;
-    // left: 160px;
-    // top: 180px;
     // border: 1px solid blueviolet;
+    @media screen and (min-width: 360px) and (max-width: 480px) {
+        flex-direction: column;
+        gap: 14px;
+    }
 
     &_discription{
         display: flex;
@@ -164,9 +168,6 @@
         border-radius: 24px;
 
         &_title{
-            // gap: 12px;
-            // width: 186px;
-            // height: 142px;
             &_aboutme{
                 // width: 156px;
                 // height: 72px;
@@ -279,69 +280,119 @@
 
 // ------------footer--------------
 .footer{
+    @media screen and (min-width: 360px) and (max-width: 480px) {
+        @include container_mobile;
+    }
+    @include container;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 48px;
     margin-top: 80px;
-    // border: 1px solid black;
-    // width: 1440px;
-    // height: 378px;
-    // padding: 0px 451px;
-    // position: relative;
-    // left: -1px;
-    // top: 3646px;
-    // bottom: 0px;
+    margin-bottom: 10px;
+    @media screen and (min-width: 360px) and (max-width: 480px) {
+        gap: 30px;
+        margin-top: 80px;
+    }
 
     &_title{
         display: flex;
         justify-content: center;
+        align-items: center;
         gap: 20px;
+        @media screen and (min-width: 360px) and (max-width: 480px) {
+            gap: 8px;
+        }
         &_name{
+            // height: 31px;
+            // width: 95px;
             font-family: 'Yekan Bakh FaNum';
             font-style: normal;
             font-weight: 600;
             font-size: 20px;
             line-height: 31px;
             color: $title_color_1;
-            // height: 31px;
-            // width: 95px;
+            @media screen and (min-width: 360px) and (max-width: 480px) {
+                font-size: 16px;
+                line-height: 29px;
+            }
         }
 
-        // &_line{
-        //     width: 0px;
-        //     height: 223px;
-        //     border: 1px solid #AFAFAF;
-        //     transform: rotate(-90deg);   
-        // }
+        &_line{
+            display: block;
+          @media screen and (min-width: 360px) and (max-width: 480px) {
+          display: none;
+           }
+        }
+        &_lineR{
+            display: none;
+          @media screen and (min-width: 360px) and (max-width: 480px) {
+          display: block;
+           }
+        }
     }
 
     &_body{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: start;
         align-items: center;
-        padding: 0px 160px;
-        // gap: 48px;
-        width: 1440px;
+        padding: 0px 16px;
+        gap: 250px;
+        @media screen and (min-width: 360px) and (max-width: 480px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 32px;
+          }
 
         &_details{
             display: flex;
             flex-direction: column;
+            align-items: flex-start;
             gap: 24px;
-            // align-items: flex-start;
-            // width: 329px;
-            // height: 146px;
+            @media screen and (min-width: 360px) and (max-width: 480px) {
+                order: 2;
+                gap: 16px;
+                display: grid;
+                grid-template-rows: 1fr 1fr;
+                grid-template-columns: 1fr 1fr;
+                &_ways:last-child{
+                    grid-row-start: 1;grid-row-end: 3;
+                    flex-direction: column;
+                }
+              }
+            
 
             &_ways {
                display: flex;
                flex-direction: row;
                align-items: center;
                gap: 24px;
-            //    &_logo{
-            //        width: 24px;
-            //        height: 24px;
-            //    }
+               @media screen and (min-width: 360px) and (max-width: 480px){
+                  background: $on-primery-light-color;
+                  border: 1px solid $neutral-color-9;
+                  border-radius: 16px;
+                  gap: 8px;
+                  padding: 8px 4px;
+               }
+
+               
+
+               &_logo{
+                   @media screen and (min-width: 360px) and (max-width: 480px){
+                   display: none;
+                 }
+               }
+
+               &_logoR{
+                display: none;
+                @media screen and (min-width: 360px) and (max-width: 480px){
+                display: block;
+              }
+            }
    
                &_text{
                    font-family: 'Yekan Bakh FaNum';
@@ -351,6 +402,10 @@
                    line-height: 22px;
                    text-align: right;
                    color: $text_color_2;
+                   @media screen and (min-width: 360px) and (max-width: 480px){
+                    font-size: 10px;
+                    line-height: 16px;
+                  }
                 }
             }
         }
@@ -358,20 +413,17 @@
         &_connection{
             display: flex;
             flex-direction: column;
-            gap: 32px;
             // align-items: flex-start;
-            // width: 335px;
-            // height: 167px;
+            gap: 32px;
 
             &_text{
                 display: flex;
                 flex-direction: column;
+                justify-content: center;
+                align-items: start;
                 gap: 12px;
-                // width: 335px;
-                // height: 87px;
+        
                 &_title{
-                    // height: 25px;
-                    // width: 120px;
                     font-family: 'Yekan Bakh FaNum';
                     font-style: normal;
                     font-weight: 700;
@@ -379,18 +431,24 @@
                     line-height: 25px;
                     text-align: right;
                     color: $text_color_2;
+                    @media screen and (min-width: 360px) and (max-width: 480px){
+                        font-size: 14px;
+                        line-height: 22px;
+                      }
                 }
     
                 &_body{
-                    width: 334px;
-                    // height: 50px;
                     font-family: 'Yekan Bakh FaNum';
                     font-style: normal;
                     font-weight: 400;
                     font-size: 16px;
                     line-height: 25px;
                     text-align: right;
-                    color: $text_color_2;         
+                    color: $text_color_2;  
+                    @media screen and (min-width: 360px) and (max-width: 480px){
+                        font-size: 12px;
+                        line-height: 19px;
+                      }       
                 }
             }
 
@@ -398,8 +456,6 @@
                 display: flex;
                 flex-direction: column;
                 position: relative;
-                // align-items: flex-start;
-                // gap: 8px;
                 // width: 335px;
                 // height: 48px;
 
@@ -407,9 +463,10 @@
                     border: 1px solid #A1A1A1;
                     border-radius: 10px;
                     padding: 10px 24px 10px 6px;
-                    // gap: 212px;
-                    // width: 335px;
-                    // height: 48px;
+                    @media screen and (min-width: 360px) and (max-width: 480px){
+                        width: 328px;
+                        height: 40px;
+                      }    
                 }
 
                 &_btn{
@@ -433,5 +490,18 @@
             }
 
         }
+    }
+    &_index{
+        font-family: 'Yekan Bakh FaNum';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: right;
+        color: $span_color_1;     
+        @media screen and (min-width: 360px) and (max-width: 480px){
+            font-size: 12px;
+            line-height: 19px;
+          }              
     }
 }

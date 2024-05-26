@@ -469,7 +469,6 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   gap: 48px;
 }
 @media screen and (min-width: 360px) and (max-width: 480px) {
@@ -537,7 +536,7 @@ button {
     flex: 100%;
   }
 }
-.body_container_discription_comments_users_1 {
+.body_container_discription_comments_users_card {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -551,7 +550,7 @@ button {
   border-radius: 16px;
 }
 @media screen and (min-width: 360px) and (max-width: 480px) {
-  .body_container_discription_comments_users_1 {
+  .body_container_discription_comments_users_card {
     gap: 8px;
     padding: 24px;
     flex: 100%;
@@ -559,7 +558,7 @@ button {
     width: 258px;
   }
 }
-.body_container_discription_comments_users_1_profile {
+.body_container_discription_comments_users_card_profile {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -567,22 +566,22 @@ button {
   gap: 17px;
 }
 @media screen and (min-width: 360px) and (max-width: 480px) {
-  .body_container_discription_comments_users_1_profile {
+  .body_container_discription_comments_users_card_profile {
     gap: 10px;
   }
 }
 @media screen and (min-width: 360px) and (max-width: 480px) {
-  .body_container_discription_comments_users_1_profile_img {
+  .body_container_discription_comments_users_card_profile_img {
     max-width: 48px;
     height: auto;
     width: 100%;
   }
 }
-.body_container_discription_comments_users_1_profile_text {
+.body_container_discription_comments_users_card_profile_text {
   text-align: right;
   gap: 4px;
 }
-.body_container_discription_comments_users_1_profile_text_name {
+.body_container_discription_comments_users_card_profile_text_name {
   font-family: "Abar Mid FaNum";
   font-style: normal;
   color: #141414;
@@ -591,12 +590,12 @@ button {
   line-height: 27px;
 }
 @media screen and (min-width: 360px) and (max-width: 480px) {
-  .body_container_discription_comments_users_1_profile_text_name {
+  .body_container_discription_comments_users_card_profile_text_name {
     font-size: 14px;
     line-height: 25px;
   }
 }
-.body_container_discription_comments_users_1_profile_text_job {
+.body_container_discription_comments_users_card_profile_text_job {
   font-family: "Yekan Bakh FaNum";
   font-style: normal;
   color: #5C5C5C;
@@ -605,12 +604,12 @@ button {
   line-height: 22px;
 }
 @media screen and (min-width: 360px) and (max-width: 480px) {
-  .body_container_discription_comments_users_1_profile_text_job {
+  .body_container_discription_comments_users_card_profile_text_job {
     font-size: 12px;
     line-height: 19px;
   }
 }
-.body_container_discription_comments_users_1_comment {
+.body_container_discription_comments_users_card_comment {
   font-family: "Yekan Bakh FaNum";
   font-style: normal;
   text-align: right;
@@ -621,8 +620,27 @@ button {
   overflow: hidden;
 }
 @media screen and (min-width: 360px) and (max-width: 480px) {
-  .body_container_discription_comments_users_1_comment {
+  .body_container_discription_comments_users_card_comment {
     font-size: 12px;
     line-height: 19px;
   }
+}
+.body_container_discription_icon {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 200px;
+  width: 1404px;
+  height: 400px;
+}
+.body_container_discription_icon > * {
+  gap: 10px;
+  width: 40px;
+  height: 40px;
+  background: #FFFFFF;
+  border: 1px solid #E3E6E8;
+  border-radius: 6px;
+  padding: 5px;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */

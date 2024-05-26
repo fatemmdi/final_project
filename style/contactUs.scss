@@ -9,6 +9,9 @@
 
 // ------------------header----------------
 .header {
+    @media screen and (min-width: 360px) and (max-width: 480px) {
+        @include container_mobile;
+    }
     @include full_container;
     display: flex;
     justify-content: space-between;
@@ -42,8 +45,10 @@
             cursor: pointer;
             @media screen and (min-width: 360px) and (max-width: 480px){
                 text-align: center;
-                font-size: 16spx;
-                line-height: 25px;                
+                font-size: 16px;
+                line-height: 25px;        
+                position: relative; 
+                right: 40px;       
                }
         }
 
@@ -131,14 +136,12 @@
          }
     }
 }
-
 // ---------------------main--------------------
 .container {
     @include container;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    // align-items: flex-start;
     padding: 40px 32px;
     gap: 32px;
     margin-top: 80px;
@@ -146,43 +149,43 @@
     border: 1px solid $neutral-color-9;
     box-shadow: 0px 4px 63px rgba(0, 0, 0, 0.03);
     border-radius: 24px;
-    // width: 1070px;
-    // height: 686px;
-    // position: absolute;
-    // left: 160px;
-    // top: 180px;
+    @media screen and (min-width: 360px) and (max-width: 480px) {
+       display: grid;
+       grid-template-columns: 1fr;
+       grid-template-rows: 1fr 1fr 1fr;
+       gap: 10px;
+       border-radius: 16px;
+       max-height: 800px;
+       max-width: 360px;
+       margin-top: 1px;
+
+    }
     
     &_contact{
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
+        justify-content: start;
         gap: 32px;
-        height: 606px;
-        // justify-content: space-between;
-        // align-items: flex-end;
-        // width: 470px;
-        // align-self: stretch;   
         
         &_text{
             display: flex;
             flex-direction: column;
             justify-content: center;
-            gap: 50px;
-            // width: 470px;
-            // height: 316px;            
-            // align-items: flex-end;
-
+            align-items: flex-start;
+            gap: 50px;            
+            
             &_discription{
+                @media screen and (min-width: 360px) and (max-width: 480px) {
+                   display: none;
+                   }
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: flex-start;
                 gap: 24px;
-                // width: 470px;
-                // height: 156px;
 
                 &_title{
-                    // width: 197px;
-                    // height: 72px;
                     color: $unimportant_text_color_1;
                     font-family: 'Abar Mid FaNum';
                     font-style: normal;
@@ -193,15 +196,13 @@
                 }
 
                 &_body{
-                    // width: 462px;
-                    // height: 72px;
                     font-family: 'Abar Mid FaNum';
                     font-style: normal;
                     font-weight: 400;
                     font-size: 20px;
                     line-height: 36px;
                     text-align: right;
-                    color: #6F7076;                    
+                    color: #6F7076;                  
                 }
                 
             }
@@ -211,9 +212,10 @@
                 flex-direction: column;
                 justify-content: center;
                 gap: 32px;
+                @media screen and (min-width: 360px) and (max-width: 480px) {
+                    display: none;
+                    }
                 // align-items: flex-start;
-                // width: 470px;
-                // height: 128px;
 
                 &_tel{
                     display: flex;
@@ -221,10 +223,7 @@
                     justify-content: flex-start;
                     align-items: center;
                     gap: 8px;
-                    // padding: 16px;
-                    // width: 470px;
-                    // height: 56px;
-                    // border-radius: 6px;    
+                    // padding: 16px;   
                     
                     // &_logo{
                         
@@ -268,6 +267,9 @@
         }
 
         &_icon{
+            @media screen and (min-width: 360px) and (max-width: 480px) {
+                display: none;
+              }
             display: flex;
             justify-content: flex-start;
             align-items: center;
@@ -277,31 +279,36 @@
             cursor: pointer;        
         }
     }
+
+    &_line{
+        @media screen and (min-width: 360px) and (max-width: 480px) {
+            display: none;
+        }
+    }
+
     &_form{
+        @media screen and (min-width: 360px) and (max-width: 480px) {
+            display: none;
+        }
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
         gap: 20px;
-        width: 471px;
-        // height: 606px;
+        order: 2;
         
         &_name{
             display: flex;
             flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
             gap: 24px;
-            // justify-content: center;
-            // align-items: flex-start;
-            // width: 471px;
-            // height: 85px;  
             
             &_fname{
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
                 gap: 4px;
-                // width: 223px;
-                // height: 85px;  
                 
                 &_label{
                     color: $unimportant_text_color_1;                    
@@ -313,16 +320,11 @@
                 }
 
                 &_input{
-                    // display: flex;
-                    // flex-direction: row;
-                    // justify-content: flex-end;
-                    // align-items: flex-start;
-                    // gap: 8px; 
                     width: 223px;
                     height: 56px;                       
                     padding: 16px;
                     border: 1px solid $label_color_1;
-                    border-radius: 6px;                    
+                    border-radius: 6px;               
                 }
 
                 &_input::placeholder{
@@ -331,7 +333,7 @@
                     font-weight: 600;
                     font-size: 16px;
                     line-height: 25px;
-                    color: $placeholder_color_1;                    
+                    color: $placeholder_color_1;                                        
                 }
             }
 
@@ -340,8 +342,6 @@
                 flex-direction: column;
                 align-items: flex-start;
                 gap: 4px;
-                // width: 223px;
-                // height: 85px;  
                 
                 &_label{
                     color: $unimportant_text_color_1;                    
@@ -353,16 +353,11 @@
                 }
 
                 &_input{
-                    // display: flex;
-                    // flex-direction: row;
-                    // justify-content: flex-end;
-                    // align-items: flex-start;
-                    // gap: 8px; 
                     width: 223px;
                     height: 56px;                                        
                     padding: 16px;
                     border: 1px solid $label_color_1;
-                    border-radius: 6px;                    
+                    border-radius: 6px;                
                 }
 
                 &_input::placeholder{
@@ -388,20 +383,15 @@
                 font-style: normal;
                 font-weight: 600;
                 font-size: 16px;
-                line-height: 25px;                
+                line-height: 25px;            
             }
 
             &_input{
-                // display: flex;
-                // flex-direction: row;
-                // justify-content: flex-end;
-                // align-items: flex-start;
-                // gap: 8px; 
                 padding: 16px;
                 border: 1px solid $label_color_1;
                 border-radius: 6px;    
                 width: 471px;
-                height: 56px;                                
+                height: 56px;                          
             }
 
             &_input::placeholder{
@@ -410,7 +400,7 @@
                 font-weight: 600;
                 font-size: 16px;
                 line-height: 25px;
-                color: $placeholder_color_1;                    
+                color: $placeholder_color_1;           
             }
         }
 
@@ -426,20 +416,15 @@
                 font-style: normal;
                 font-weight: 600;
                 font-size: 16px;
-                line-height: 25px;                
+                line-height: 25px;           
             }
 
             &_input{
-                // display: flex;
-                // flex-direction: row;
-                // justify-content: flex-end;
-                // align-items: flex-start;
-                // gap: 8px; 
                 padding: 16px;
                 border: 1px solid $label_color_1;
                 border-radius: 6px;    
                 width: 471px;
-                height: 56px;                                
+                height: 56px;                           
             }
 
             &_input::placeholder{
@@ -449,7 +434,7 @@
                 font-size: 16px;
                 line-height: 25px;
                 color: $placeholder_color_1; 
-                text-align: right;                   
+                text-align: right;               
             }            
         }
 
@@ -465,14 +450,14 @@
                 font-style: normal;
                 font-weight: 600;
                 font-size: 16px;
-                line-height: 25px;                
+                line-height: 25px;             
             }   
             &_input{
                 padding: 16px;
                 border: 1px solid $label_color_1;
                 border-radius: 6px;    
                 width: 471px;
-                height: 136px;                             
+                height: 136px;                              
             }    
             
             &_input::placeholder{
@@ -481,7 +466,7 @@
                 font-weight: 600;
                 font-size: 16px;
                 line-height: 25px;
-                color: $placeholder_color_1;                    
+                color: $placeholder_color_1;                   
             }
         }
 
@@ -495,7 +480,7 @@
             font-style: normal;
             font-weight: 700;
             color: $neutral-color-11;
-            text-align: center;                                 
+            text-align: center;                             
         }
 
         &_btn:hover {
@@ -504,73 +489,519 @@
          }
       
     }
+
+    // -------------------RESPONSIE-------------------
+    &_formR{
+        display: none;
+        @media screen and (min-width: 360px) and (max-width: 480px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            order: 2;
+            gap: 4px;
+            order: 2;
+            align-items: flex-start;
+          }
+        
+        &_name{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 24px;
+            @media screen and (min-width: 360px) and (max-width: 480px) {
+                gap: 16px;
+              }
+            
+            &_fname{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 4px;
+                
+                &_label{
+                    color: $unimportant_text_color_1;                    
+                    font-family: 'Yekan Bakh FaNum';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 25px;
+                    @media screen and (min-width: 360px) and (max-width: 480px) {
+                        font-size: 12px;
+                        line-height: 19px;
+                      } 
+                }
+
+                &_input{
+                    width: 223px;
+                    height: 56px;                       
+                    padding: 16px;
+                    border: 1px solid $label_color_1;
+                    border-radius: 6px;   
+                    @media screen and (min-width: 360px) and (max-width: 480px) {
+                        width: 140px;
+                        height: 40px;
+                        padding: 11px 8px;
+                      }                  
+                }
+
+                &_input::placeholder{
+                    font-family: 'Yekan Bakh FaNum';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 25px;
+                    color: $placeholder_color_1;
+                    @media screen and (min-width: 360px) and (max-width: 480px) {
+                        font-size: 12px;
+                        line-height: 19px;
+                      }                                           
+                }
+            }
+
+            &_lname{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 4px;
+                
+                &_label{
+                    color: $unimportant_text_color_1;                    
+                    font-family: 'Yekan Bakh FaNum';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 25px;
+                    @media screen and (min-width: 360px) and (max-width: 480px) {
+                        font-size: 12px;
+                        line-height: 19px;
+                      } 
+                }
+
+                &_input{
+                    width: 223px;
+                    height: 56px;                                        
+                    padding: 16px;
+                    border: 1px solid $label_color_1;
+                    border-radius: 6px;  
+                    @media screen and (min-width: 360px) and (max-width: 480px) {
+                        width: 140px;
+                        height: 40px;
+                        padding: 11px 8px;
+                      }                     
+                }
+
+                &_input::placeholder{
+                    font-family: 'Yekan Bakh FaNum';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 25px;
+                    color: $placeholder_color_1;   
+                    @media screen and (min-width: 360px) and (max-width: 480px) {
+                        font-size: 12px;
+                        line-height: 19px;
+                      }                  
+                }
+            }
+        }
+
+        &_email{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 4px;
+            
+            &_label{
+                color: $unimportant_text_color_1;                    
+                font-family: 'Yekan Bakh FaNum';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 25px;  
+                @media screen and (min-width: 360px) and (max-width: 480px) {
+                    font-size: 12px;
+                    line-height: 19px;
+                  }               
+            }
+
+            &_input{
+                padding: 16px;
+                border: 1px solid $label_color_1;
+                border-radius: 6px;    
+                width: 471px;
+                height: 56px;  
+                @media screen and (min-width: 360px) and (max-width: 480px) {
+                    padding: 11px 8px;
+                    width: 296px;
+                    height: 40px;
+                  }                                
+            }
+
+            &_input::placeholder{
+                font-family: 'Yekan Bakh FaNum';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 25px;
+                color: $placeholder_color_1;    
+                @media screen and (min-width: 360px) and (max-width: 480px) {
+                    font-size: 12px;
+                    line-height: 19px;
+                  }                 
+            }
+        }
+
+        &_phone{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 4px;
+            
+            &_label{
+                color: $unimportant_text_color_1;                    
+                font-family: 'Yekan Bakh FaNum';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 25px;   
+                @media screen and (min-width: 360px) and (max-width: 480px) {
+                    font-size: 12px;
+                    line-height: 19px;
+                  }              
+            }
+
+            &_input{
+                padding: 16px;
+                border: 1px solid $label_color_1;
+                border-radius: 6px;    
+                width: 471px;
+                height: 56px;   
+                @media screen and (min-width: 360px) and (max-width: 480px) {
+                    padding: 11px 8px;
+                    width: 296px;
+                    height: 40px;
+                  }                              
+            }
+
+            &_input::placeholder{
+                font-family: 'Yekan Bakh FaNum';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 25px;
+                color: $placeholder_color_1; 
+                text-align: right;   
+                @media screen and (min-width: 360px) and (max-width: 480px) {
+                    font-size: 12px;
+                    line-height: 19px;
+                  }                 
+            }            
+        }
+
+        &_texterea{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 4px;
+            
+            &_label{
+                color: $unimportant_text_color_1;                    
+                font-family: 'Yekan Bakh FaNum';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 25px;  
+                @media screen and (min-width: 360px) and (max-width: 480px) {
+                    font-size: 12px;
+                    line-height: 19px;
+                  }               
+            }   
+            &_input{
+                padding: 16px;
+                border: 1px solid $label_color_1;
+                border-radius: 6px;    
+                width: 471px;
+                height: 136px;  
+                @media screen and (min-width: 360px) and (max-width: 480px) {
+                    padding: 11px 8px;
+                    width: 296px;
+                    height: 128px; 
+                  }                              
+            }    
+            
+            &_input::placeholder{
+                font-family: 'Yekan Bakh FaNum';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 25px;
+                color: $placeholder_color_1;   
+                @media screen and (min-width: 360px) and (max-width: 480px) {
+                    font-size: 12px;
+                    line-height: 19px;
+                  }                  
+            }
+        }
+
+        &_btn{
+            width: 471px;
+            height: 56px;
+            padding: 1px 3px;
+            background: $primery-color;
+            border-radius: 6px;
+            font-family: 'Yekan Bakh FaNum';
+            font-style: normal;
+            font-weight: 700;
+            color: $neutral-color-11;
+            text-align: center;
+            @media screen and (min-width: 360px) and (max-width: 480px) {
+                width: 296px;
+                height: 40px;
+                margin-top: 15px;
+              }                                   
+        }
+
+        &_btn:hover {
+            background: $primery-hover-light-color;
+            cursor: pointer;  
+         }
+      
+    }
+
+    &_discription{
+        display: none;
+        @media screen and (min-width: 360px) and (max-width: 480px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+        order: 1;
+
+        &_title{
+            color: $unimportant_text_color_1;
+            font-family: 'Abar Mid FaNum';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 43px;
+        }
+
+        &_body{
+            font-family: 'Abar Mid FaNum';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 25px;
+            text-align: right;
+            color: #6F7076;                  
+        }
+      }         
+    }
+
+    &_call{
+        display: none;
+        @media screen and (min-width: 360px) and (max-width: 480px) {
+        order: 3;   
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 16px;
+        max-width: 312px;
+        // margin: 0 auto;
+
+        &_tel{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 12px 8px;
+            gap: 12px;
+            background: $on-primery-light-color;
+            border: 1px solid $neutral-color-9;
+            box-shadow: 0px 4px 63px rgba(0, 0, 0, 0.03);
+            border-radius: 12px;          
+            // &_logo{
+                
+            // }
+            
+            &_number{
+                font-family: 'Yekan Bakh FaNum';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 10px;
+                line-height: 16px;
+                text-align: right; 
+                color: $text_color_2;                   
+            }
+        }
+        
+        &_email{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 12px 8px;
+            gap: 12px;
+            background: $on-primery-light-color;
+            border: 1px solid $neutral-color-9;
+            box-shadow: 0px 4px 63px rgba(0, 0, 0, 0.03);
+            border-radius: 12px;            
+            // &_logo{}
+
+            &_address{
+                font-family: 'Yekan Bakh FaNum';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 10px;
+                line-height: 16px;
+                text-align: right;
+                color: $text_color_2;                
+            }
+        }
+      }
+    }
+
+    &_icon{
+        display: none;
+        @media screen and (min-width: 360px) and (max-width: 480px){
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 12px 8px;                                                 
+            gap: 16px;
+            background: $on-primery-light-color;
+            border: 1px solid $neutral-color-9;
+            box-shadow: 0px 4px 63px rgba(0, 0, 0, 0.03);
+            border-radius: 12px;
+            width: 312px;
+            order: 4;
+        }
+                
+    }
 }
 
 // ------------------footer---------------------
 .footer{
+    @media screen and (min-width: 360px) and (max-width: 480px) {
+        @include container_mobile;
+    }
+    @include container;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 48px;
-    // border: 1px solid black;
     margin-top: 80px;
-    // width: 1440px;
-    // height: 378px;
-    // padding: 0px 451px;
-    // position: relative;
-    // left: -1px;
-    // top: 3646px;
-    // bottom: 0px;
+    margin-bottom: 10px;
+    @media screen and (min-width: 360px) and (max-width: 480px) {
+        gap: 30px;
+        margin-top: 80px;
+    }
 
     &_title{
         display: flex;
         justify-content: center;
+        align-items: center;
         gap: 20px;
+        @media screen and (min-width: 360px) and (max-width: 480px) {
+            gap: 8px;
+        }
         &_name{
+            // height: 31px;
+            // width: 95px;
             font-family: 'Yekan Bakh FaNum';
             font-style: normal;
             font-weight: 600;
             font-size: 20px;
             line-height: 31px;
             color: $title_color_1;
-            // height: 31px;
-            // width: 95px;
+            @media screen and (min-width: 360px) and (max-width: 480px) {
+                font-size: 16px;
+                line-height: 29px;
+            }
         }
 
-        // &_line{
-        //     width: 0px;
-        //     height: 223px;
-        //     border: 1px solid #AFAFAF;
-        //     transform: rotate(-90deg);   
-        // }
+        &_line{
+            display: block;
+          @media screen and (min-width: 360px) and (max-width: 480px) {
+          display: none;
+           }
+        }
+        &_lineR{
+            display: none;
+          @media screen and (min-width: 360px) and (max-width: 480px) {
+          display: block;
+           }
+        }
     }
 
     &_body{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: start;
         align-items: center;
-        padding: 0px 160px;
-        // gap: 48px;
-        width: 1440px;
+        padding: 0px 16px;
+        gap: 250px;
+        @media screen and (min-width: 360px) and (max-width: 480px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 32px;
+          }
 
         &_details{
             display: flex;
             flex-direction: column;
+            align-items: flex-start;
             gap: 24px;
-            // align-items: flex-start;
-            // width: 329px;
-            // height: 146px;
+            @media screen and (min-width: 360px) and (max-width: 480px) {
+                order: 2;
+                gap: 16px;
+                display: grid;
+                grid-template-rows: 1fr 1fr;
+                grid-template-columns: 1fr 1fr;
+                &_ways:last-child{
+                    grid-row-start: 1;grid-row-end: 3;
+                    flex-direction: column;
+                    height: 143px;
+                }
+              }
+            
 
             &_ways {
                display: flex;
                flex-direction: row;
                align-items: center;
                gap: 24px;
-            //    &_logo{
-            //        width: 24px;
-            //        height: 24px;
-            //    }
+               @media screen and (min-width: 360px) and (max-width: 480px){
+                  background: $on-primery-light-color;
+                  border: 1px solid $neutral-color-9;
+                  border-radius: 16px;
+                  gap: 8px;
+                  padding: 8px 4px;
+               }
+
+               
+
+               &_logo{
+                   @media screen and (min-width: 360px) and (max-width: 480px){
+                   display: none;
+                 }
+               }
+
+               &_logoR{
+                display: none;
+                @media screen and (min-width: 360px) and (max-width: 480px){
+                display: block;
+              }
+            }
    
                &_text{
                    font-family: 'Yekan Bakh FaNum';
@@ -580,6 +1011,10 @@
                    line-height: 22px;
                    text-align: right;
                    color: $text_color_2;
+                   @media screen and (min-width: 360px) and (max-width: 480px){
+                    font-size: 10px;
+                    line-height: 16px;
+                  }
                 }
             }
         }
@@ -587,20 +1022,17 @@
         &_connection{
             display: flex;
             flex-direction: column;
-            gap: 32px;
             // align-items: flex-start;
-            // width: 335px;
-            // height: 167px;
+            gap: 32px;
 
             &_text{
                 display: flex;
                 flex-direction: column;
+                justify-content: center;
+                align-items: start;
                 gap: 12px;
-                // width: 335px;
-                // height: 87px;
+        
                 &_title{
-                    // height: 25px;
-                    // width: 120px;
                     font-family: 'Yekan Bakh FaNum';
                     font-style: normal;
                     font-weight: 700;
@@ -608,18 +1040,24 @@
                     line-height: 25px;
                     text-align: right;
                     color: $text_color_2;
+                    @media screen and (min-width: 360px) and (max-width: 480px){
+                        font-size: 14px;
+                        line-height: 22px;
+                      }
                 }
     
                 &_body{
-                    width: 334px;
-                    // height: 50px;
                     font-family: 'Yekan Bakh FaNum';
                     font-style: normal;
                     font-weight: 400;
                     font-size: 16px;
                     line-height: 25px;
                     text-align: right;
-                    color: $text_color_2;         
+                    color: $text_color_2;  
+                    @media screen and (min-width: 360px) and (max-width: 480px){
+                        font-size: 12px;
+                        line-height: 19px;
+                      }       
                 }
             }
 
@@ -627,8 +1065,6 @@
                 display: flex;
                 flex-direction: column;
                 position: relative;
-                // align-items: flex-start;
-                // gap: 8px;
                 // width: 335px;
                 // height: 48px;
 
@@ -636,9 +1072,10 @@
                     border: 1px solid #A1A1A1;
                     border-radius: 10px;
                     padding: 10px 24px 10px 6px;
-                    // gap: 212px;
-                    // width: 335px;
-                    // height: 48px;
+                    @media screen and (min-width: 360px) and (max-width: 480px){
+                        width: 328px;
+                        height: 40px;
+                      }    
                 }
 
                 &_btn{
@@ -662,5 +1099,18 @@
             }
 
         }
+    }
+    &_index{
+        font-family: 'Yekan Bakh FaNum';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: right;
+        color: $span_color_1;     
+        @media screen and (min-width: 360px) and (max-width: 480px){
+            font-size: 12px;
+            line-height: 19px;
+          }              
     }
 }
