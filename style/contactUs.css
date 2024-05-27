@@ -157,6 +157,8 @@ button {
 }
 @media screen and (min-width: 360px) and (max-width: 480px) {
   .container {
+    margin: 0 auto;
+    max-width: 360px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;

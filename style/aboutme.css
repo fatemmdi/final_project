@@ -154,6 +154,8 @@ button {
 }
 @media screen and (min-width: 360px) and (max-width: 480px) {
   .container {
+    margin: 0 auto;
+    max-width: 360px;
     flex-direction: column;
     gap: 14px;
   }
@@ -161,7 +163,9 @@ button {
 .container_discription {
   display: flex;
   flex-direction: column;
-  width: 548px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: right;
   height: 686px;
   padding: 32px 40px;
   gap: 24px;
@@ -169,6 +173,21 @@ button {
   border: 1px solid #F5F6F8;
   box-shadow: 0px 4px 63px rgba(0, 0, 0, 0.03);
   border-radius: 24px;
+}
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .container_discription {
+    align-items: center;
+    gap: 30px;
+    height: 392px;
+  }
+}
+.container_discription_title {
+  display: block;
+}
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .container_discription_title {
+    display: none;
+  }
 }
 .container_discription_title_aboutme {
   color: #070D31;
@@ -197,24 +216,86 @@ button {
   line-height: 30px;
   text-align: right;
 }
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .container_discription_text_introduction {
+    font-size: 12px;
+    line-height: 30px;
+    text-align: center;
+  }
+}
+.container_titleR {
+  display: none;
+}
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .container_titleR {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin: 0 auto;
+  }
+}
+.container_titleR_aboutme {
+  color: #070D31;
+  font-family: "Abar Mid FaNum";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 43px;
+  text-align: center;
+}
+.container_titleR_name {
+  font-family: "Abar Mid FaNum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 50px;
+  text-align: center;
+  color: #575757;
+}
+.container_imgR {
+  display: none;
+}
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .container_imgR {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+}
 .container_profile {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
   gap: 24px;
-  width: 548px;
-  height: 686px;
-  order: 1;
+}
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .container_profile_img {
+    display: none;
+  }
 }
 .container_profile_items {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   padding: 20px 40px;
+  width: 548px;
+  height: 312px;
   gap: 30px;
   border: 1px solid #F5F6F8;
   box-shadow: 0px 4px 63px rgba(0, 0, 0, 0.03);
   border-radius: 24px;
   background: #FFFFFF;
+}
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .container_profile_items {
+    max-width: 312px;
+    margin: 0 auto;
+    border: none;
+    gap: 16px;
+    height: 212;
+  }
 }
 .container_profile_items_1 {
   display: flex;
@@ -224,7 +305,13 @@ button {
   background: #F9FAFB;
   border: 1px solid #F5F5F5;
   border-radius: 16px;
-  height: 112px;
+}
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .container_profile_items_1 {
+    border-radius: 8px;
+    height: 90px;
+    width: 130px;
+  }
 }
 .container_profile_items_1_details {
   font-family: "Yekan Bakh FaNum";
@@ -236,6 +323,13 @@ button {
   line-height: 50px;
   text-align: right;
 }
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .container_profile_items_1_details {
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+  }
+}
 .container_profile_items_1_description {
   padding: 5px 20px 0px 0px;
   font-family: "Yekan Bakh FaNum";
@@ -245,6 +339,13 @@ button {
   line-height: 28px;
   text-align: center;
   color: #707070;
+}
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .container_profile_items_1_description {
+    font-size: 12px;
+    line-height: 16px;
+    text-align: right;
+  }
 }
 
 .footer {
@@ -267,7 +368,6 @@ button {
 @media screen and (min-width: 360px) and (max-width: 480px) {
   .footer {
     gap: 30px;
-    margin-top: 80px;
   }
 }
 .footer_title {
