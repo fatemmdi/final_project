@@ -10,6 +10,11 @@
     max-width: $screen-lg;
 }
 
+@mixin header_container {
+    margin: 0 auto;
+    max-width: 1300px;
+}
+
 @mixin full_container_mobile{
     margin: 0 auto;
     max-width: $screen-sm;  

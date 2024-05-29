@@ -1,7 +1,7 @@
 @import "./variables";
 @import "./mixin";
 @import "./reset";
-@import "../fonts/font";
+@import "./font";
 
 
 .footer{
@@ -19,6 +19,7 @@
     @media screen and (min-width: 360px) and (max-width: 480px) {
         gap: 30px;
         margin-top: 80px;
+        max-width: 320px;
     }
 
     &_title{

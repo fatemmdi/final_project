@@ -1,21 +1,24 @@
 @import "./variables";
 @import "./mixin";
 @import "./reset";
-@import "../fonts/font";
+@import "./font";
 
 
 .header {
     @media screen and (min-width: 360px) and (max-width: 480px) {
         @include container_mobile;
     }
-    @include full_container;
+    @include container;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 40px;
     background: $neutral-color-11;
     margin-top: 50px;
-    // border: solid 1px black;
+    margin-bottom: 10px;
+    @media screen and (min-width: 360px) and (max-width: 480px) {
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
     &_menu{
         display: flex;
         flex-direction: row;
@@ -33,11 +36,11 @@
         &_list:link {
             font-size: 20px;
             line-height: 31px;
-            color: #141414;
+            color: $title_color_1;
             text-decoration: none;
             font-family: 'Yekan Bakh FaNum';
             font-style: normal;
-            font-weight: 600;            
+            font-weight: $Semi_Bold;            
             cursor: pointer;
             @media screen and (min-width: 360px) and (max-width: 480px){
                 text-align: center;
@@ -54,7 +57,6 @@
              display: flex;
              align-self: center;
              align-items: center;
-             // gap: 100px;
             }
          }
 
@@ -68,7 +70,7 @@
             // align-items: flex-start;
             & > *{
                 height: 25px;
-                font-weight: 600;
+                font-weight: $Semi_Bold;
                 font-size: 16px;
                 line-height: 25px;
                 text-align: right;

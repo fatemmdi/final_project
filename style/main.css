@@ -9,8 +9,8 @@ button {
 }
 
 @font-face {
-  font-family: "Yekan Bakh FaNum", vazir;
-  src: url("./woff/YekanBakh-Regular.woff") format("woff"), url("./woff2/YekanBakh-Regular.woff2") format("woff2"), url("./vazir/Vazir.woff") format("woff");
+  font-family: "Yekan Bakh FaNum";
+  src: url("../fonts/woff/YekanBakh-Regular.woff") format("woff"), url("../fonts/woff2/YekanBakh-Regular.woff2") format("woff2");
 }
 .body {
   margin: 0 auto;
@@ -28,14 +28,22 @@ button {
   align-items: center;
   text-align: center;
   gap: 80px;
+  background: linear-gradient(180deg, #EBF3FF -7.33%, #FFFFFF 76.21%);
 }
 .body_container_titles_background {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
   margin-top: 100px;
 }
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .body_container_titles_background {
+    margin-top: 80px;
+  }
+}
 .body_container_titles_background_h3 {
-  font-family: "Abar Mid FaNum";
+  font-family: "Yekan Bakh FaNum";
   font-style: normal;
   font-weight: 400;
   font-size: 46px;
@@ -50,7 +58,7 @@ button {
   }
 }
 .body_container_titles_background_h1 {
-  font-family: "Abar Mid FaNum";
+  font-family: "Yekan Bakh FaNum";
   font-style: normal;
   font-weight: 900;
   font-size: 64px;
@@ -66,12 +74,37 @@ button {
 }
 .body_container_titles_background_line {
   transform: rotate(360.28deg);
-  position: relative;
-  left: 70px;
-  top: 5px;
 }
 @media screen and (min-width: 360px) and (max-width: 480px) {
   .body_container_titles_background_line {
+    display: none;
+  }
+}
+.body_container_titles_background_line1 {
+  display: none;
+}
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .body_container_titles_background_line1 {
+    display: flex;
+  }
+}
+.body_container_titles_background_star1 {
+  position: absolute;
+  right: 250px;
+  top: 180px;
+}
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .body_container_titles_background_star1 {
+    display: none;
+  }
+}
+.body_container_titles_background_star2 {
+  position: absolute;
+  left: 250px;
+  top: 400px;
+}
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .body_container_titles_background_star2 {
     display: none;
   }
 }
@@ -149,7 +182,7 @@ button {
 }
 @media screen and (min-width: 360px) and (max-width: 480px) {
   .body_container_discription_image {
-    max-width: 340px;
+    max-width: 320px;
     width: 90%;
     height: auto;
   }
@@ -164,6 +197,7 @@ button {
 @media screen and (min-width: 360px) and (max-width: 480px) {
   .body_container_discription_features {
     gap: 10px;
+    max-width: 320px;
   }
 }
 .body_container_discription_features_text {
@@ -180,7 +214,7 @@ button {
   }
 }
 .body_container_discription_features_text_h2 {
-  font-family: "Abar Mid FaNum";
+  font-family: "Yekan Bakh FaNum";
   font-style: normal;
   font-weight: 600;
   font-size: 40px;
@@ -208,7 +242,6 @@ button {
   .body_container_discription_features_text_h4 {
     font-size: 10px;
     line-height: 15px;
-    width: 312px;
   }
 }
 .body_container_discription_features_items {
@@ -218,7 +251,6 @@ button {
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
-  max-width: 1440px;
 }
 @media screen and (min-width: 360px) and (max-width: 480px) {
   .body_container_discription_features_items {
@@ -239,10 +271,10 @@ button {
 }
 @media screen and (min-width: 360px) and (max-width: 480px) {
   .body_container_discription_features_items_1 {
-    max-width: 440px;
+    max-width: 312px;
     width: 40%;
     gap: 2px;
-    padding: 5px 3px 5px 3px;
+    padding: 4px 3px 4px 3px;
   }
 }
 .body_container_discription_features_items_1_logo {
@@ -262,7 +294,7 @@ button {
   }
 }
 .body_container_discription_features_items_1_titr {
-  font-family: "Abar Mid FaNum";
+  font-family: "Yekan Bakh FaNum";
   font-style: normal;
   justify-content: center;
   color: #070D31;
@@ -275,8 +307,6 @@ button {
   .body_container_discription_features_items_1_titr {
     font-size: 12px;
     line-height: 18px;
-    width: 75px;
-    height: 32px;
   }
 }
 .body_container_discription_features_items_1_body {
@@ -303,6 +333,11 @@ button {
   align-items: center;
   gap: 600px;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .body_container_discription_download {
+    max-width: 320px;
+  }
 }
 .body_container_discription_download_images {
   position: relative;
@@ -380,7 +415,7 @@ button {
   }
 }
 .body_container_discription_download_text_titr {
-  font-family: "Abar Mid FaNum";
+  font-family: "Yekan Bakh FaNum";
   font-style: normal;
   text-align: right;
   color: #191C1E;
@@ -417,7 +452,7 @@ button {
   .body_container_discription_download_text_body {
     font-size: 10px;
     line-height: 15px;
-    width: 312px;
+    max-width: 320px;
     text-align: center;
   }
 }
@@ -469,6 +504,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 48px;
 }
 @media screen and (min-width: 360px) and (max-width: 480px) {
@@ -489,7 +525,7 @@ button {
   }
 }
 .body_container_discription_comments_titr_h2 {
-  font-family: "Abar Mid FaNum";
+  font-family: "Yekan Bakh FaNum";
   font-style: normal;
   color: #191C1E;
   font-weight: 700;
@@ -530,10 +566,10 @@ button {
   .body_container_discription_comments_users {
     gap: 16px;
     padding: 24px;
-    max-width: 560px;
-    flex-wrap: nowrap;
+    max-height: 272px;
+    max-width: 320px;
+    flex-wrap: wrap;
     overflow: hidden;
-    flex: 100%;
   }
 }
 .body_container_discription_comments_users_card {
@@ -553,9 +589,8 @@ button {
   .body_container_discription_comments_users_card {
     gap: 8px;
     padding: 24px;
-    flex: 100%;
-    height: 270px;
-    width: 258px;
+    flex: 50%;
+    max-width: 258px;
   }
 }
 .body_container_discription_comments_users_card_profile {
@@ -582,7 +617,7 @@ button {
   gap: 4px;
 }
 .body_container_discription_comments_users_card_profile_text_name {
-  font-family: "Abar Mid FaNum";
+  font-family: "Yekan Bakh FaNum";
   font-style: normal;
   color: #141414;
   font-weight: 700;
@@ -626,13 +661,14 @@ button {
   }
 }
 .body_container_discription_icon {
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 200px;
   width: 1404px;
   height: 400px;
+  background-color: #5C5C5C;
 }
 .body_container_discription_icon > * {
   gap: 10px;

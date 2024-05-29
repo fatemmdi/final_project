@@ -1,7 +1,7 @@
 @import "./variables";
 @import "./mixin";
 @import "./reset";
-@import "../fonts/font";
+@import "./font";
 // @import "./footer.css";
 // @import "./header.css";
 
@@ -188,7 +188,7 @@
 
                 &_title{
                     color: $unimportant_text_color_1;
-                    font-family: 'Abar Mid FaNum';
+                    font-family: "Yekan Bakh FaNum";
                     font-style: normal;
                     font-weight: 700;
                     font-size: 40px;
@@ -197,7 +197,7 @@
                 }
 
                 &_body{
-                    font-family: 'Abar Mid FaNum';
+                    font-family: "Yekan Bakh FaNum";
                     font-style: normal;
                     font-weight: 400;
                     font-size: 20px;
@@ -784,7 +784,7 @@
 
         &_title{
             color: $unimportant_text_color_1;
-            font-family: 'Abar Mid FaNum';
+            font-family: "Yekan Bakh FaNum";
             font-style: normal;
             font-weight: 700;
             font-size: 24px;
@@ -792,7 +792,7 @@
         }
 
         &_body{
-            font-family: 'Abar Mid FaNum';
+            font-family: "Yekan Bakh FaNum";
             font-style: normal;
             font-weight: 400;
             font-size: 14px;

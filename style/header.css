@@ -9,23 +9,29 @@ button {
 }
 
 @font-face {
-  font-family: "Yekan Bakh FaNum", vazir;
-  src: url("./woff/YekanBakh-Regular.woff") format("woff"), url("./woff2/YekanBakh-Regular.woff2") format("woff2"), url("./vazir/Vazir.woff") format("woff");
+  font-family: "Yekan Bakh FaNum";
+  src: url("../fonts/woff/YekanBakh-Regular.woff") format("woff"), url("../fonts/woff2/YekanBakh-Regular.woff2") format("woff2");
 }
 .header {
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: 1200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 40px;
   background: #FFFFFF;
   margin-top: 50px;
+  margin-bottom: 10px;
 }
 @media screen and (min-width: 360px) and (max-width: 480px) {
   .header {
     margin: 0 auto;
     max-width: 360px;
+  }
+}
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .header {
+    margin-top: 15px;
+    margin-bottom: 5px;
   }
 }
 .header_menu {

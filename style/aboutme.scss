@@ -1,8 +1,8 @@
 @import "./variables";
 @import "./mixin";
 @import "./reset";
-@import "../fonts/font";
-@import "./footer.css";
+@import "./font";
+// @import "./footer.css";
 // @import "./header.css";
 
 
@@ -41,7 +41,7 @@
             text-decoration: none;
             font-family: 'Yekan Bakh FaNum';
             font-style: normal;
-            font-weight: 600;            
+            font-weight: $Semi_Bold;            
             cursor: pointer;
             @media screen and (min-width: 360px) and (max-width: 480px){
                 text-align: center;
@@ -72,7 +72,7 @@
             // align-items: flex-start;
             & > *{
                 height: 25px;
-                font-weight: 600;
+                font-weight: $Semi_Bold;
                 font-size: 16px;
                 line-height: 25px;
                 text-align: right;
@@ -180,7 +180,7 @@
             }
             &_aboutme{
                 color: $unimportant_text_color_1;     
-                font-family: 'Abar Mid FaNum';
+                font-family: "Yekan Bakh FaNum";
                 font-style: normal;
                 font-weight: 700;
                 font-size: 40px;
@@ -189,7 +189,7 @@
             }
 
             &_name{
-                font-family: 'Abar Mid FaNum';
+                font-family: "Yekan Bakh FaNum";
                 font-style: normal;
                 font-weight: 400;
                 font-size: 32px;
@@ -232,18 +232,18 @@
         }
         &_aboutme{
             color: $unimportant_text_color_1;     
-            font-family: 'Abar Mid FaNum';
+            font-family: "Yekan Bakh FaNum";
             font-style: normal;
-            font-weight: 700;
+            font-weight: $Bold;
             font-size: 24px;
             line-height: 43px;
             text-align: center;
         }
 
         &_name{
-            font-family: 'Abar Mid FaNum';
+            font-family: "Yekan Bakh FaNum";
             font-style: normal;
-            font-weight: 400;
+            font-weight: $Normal;
             font-size: 28px;
             line-height: 50px;
             text-align: center;
@@ -292,7 +292,10 @@
                 margin: 0 auto; 
                 border: none;
                 gap: 16px;
-                height: 212;
+                height: 220px;
+                background: none;
+                border: none;
+                margin-bottom: 10px;
                
               }
 
@@ -316,7 +319,7 @@
                     font-style: normal;
                     color: $unimportant_text_color_1;
                     padding: 20px 20px 0px 0px;
-                    font-weight: 600;
+                    font-weight: $Semi_Bold;
                     font-size: 32px;
                     line-height: 50px;
                     text-align: right;
@@ -331,7 +334,7 @@
                     padding: 5px 20px 0px 0px;
                     font-family: 'Yekan Bakh FaNum';
                     font-style: normal;
-                    font-weight: 400;
+                    font-weight: $Normal;
                     font-size: 18px;
                     line-height: 28px;
                     text-align: center;
@@ -381,7 +384,7 @@
             // width: 95px;
             font-family: 'Yekan Bakh FaNum';
             font-style: normal;
-            font-weight: 600;
+            font-weight: $Semi_Bold;
             font-size: 20px;
             line-height: 31px;
             color: $title_color_1;
@@ -469,7 +472,7 @@
                &_text{
                    font-family: 'Yekan Bakh FaNum';
                    font-style: normal;
-                   font-weight: 400;
+                   font-weight: $Normal;
                    font-size: 14px;
                    line-height: 22px;
                    text-align: right;
@@ -498,7 +501,7 @@
                 &_title{
                     font-family: 'Yekan Bakh FaNum';
                     font-style: normal;
-                    font-weight: 700;
+                    font-weight: $Bold;
                     font-size: 16px;
                     line-height: 25px;
                     text-align: right;
@@ -512,7 +515,7 @@
                 &_body{
                     font-family: 'Yekan Bakh FaNum';
                     font-style: normal;
-                    font-weight: 400;
+                    font-weight: $Normal;
                     font-size: 16px;
                     line-height: 25px;
                     text-align: right;
@@ -566,7 +569,7 @@
     &_index{
         font-family: 'Yekan Bakh FaNum';
         font-style: normal;
-        font-weight: 400;
+        font-weight: $Normal;
         font-size: 14px;
         line-height: 22px;
         text-align: right;

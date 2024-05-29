@@ -9,8 +9,8 @@ button {
 }
 
 @font-face {
-  font-family: "Yekan Bakh FaNum", vazir;
-  src: url("./woff/YekanBakh-Regular.woff") format("woff"), url("./woff2/YekanBakh-Regular.woff2") format("woff2"), url("./vazir/Vazir.woff") format("woff");
+  font-family: "Yekan Bakh FaNum";
+  src: url("../fonts/woff/YekanBakh-Regular.woff") format("woff"), url("../fonts/woff2/YekanBakh-Regular.woff2") format("woff2");
 }
 .header {
   margin: 0 auto;
@@ -197,7 +197,7 @@ button {
 }
 .container_contact_text_discription_title {
   color: #070D31;
-  font-family: "Abar Mid FaNum";
+  font-family: "Yekan Bakh FaNum";
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -205,7 +205,7 @@ button {
   text-align: center;
 }
 .container_contact_text_discription_body {
-  font-family: "Abar Mid FaNum";
+  font-family: "Yekan Bakh FaNum";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -863,14 +863,14 @@ button {
   }
   .container_discription_title {
     color: #070D31;
-    font-family: "Abar Mid FaNum";
+    font-family: "Yekan Bakh FaNum";
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 43px;
   }
   .container_discription_body {
-    font-family: "Abar Mid FaNum";
+    font-family: "Yekan Bakh FaNum";
     font-style: normal;
     font-weight: 400;
     font-size: 14px;

@@ -9,8 +9,8 @@ button {
 }
 
 @font-face {
-  font-family: "Yekan Bakh FaNum", vazir;
-  src: url("./woff/YekanBakh-Regular.woff") format("woff"), url("./woff2/YekanBakh-Regular.woff2") format("woff2"), url("./vazir/Vazir.woff") format("woff");
+  font-family: "Yekan Bakh FaNum";
+  src: url("../fonts/woff/YekanBakh-Regular.woff") format("woff"), url("../fonts/woff2/YekanBakh-Regular.woff2") format("woff2");
 }
 .footer {
   margin: 0 auto;
@@ -33,6 +33,7 @@ button {
   .footer {
     gap: 30px;
     margin-top: 80px;
+    max-width: 320px;
   }
 }
 .footer_title {
