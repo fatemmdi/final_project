@@ -1,0 +1,290 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+  all: unset;
+}
+
+@font-face {
+  font-family: "Yekan Bakh FaNum";
+  src: url("../fonts/woff/YekanBakh-Regular.woff") format("woff"), url("../fonts/woff2/YekanBakh-Regular.woff2") format("woff2");
+}
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 58.5px rgba(0, 0, 0, 0.06);
+  border-radius: 16px;
+  padding: 20px;
+  gap: 80px;
+  position: absolute;
+  width: 272px;
+  height: 984px;
+  right: 20px;
+  top: 20px;
+}
+.container_profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+.container_profile_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3px;
+}
+.container_profile_text_name {
+  font-family: "Yekan Bakh FaNum";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 28px;
+  color: #242424;
+}
+.container_profile_text_date {
+  font-family: "Yekan Bakh FaNum";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  color: #7D7D7F;
+}
+.container_list_items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+.container_list_items_li1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.container_list_items_li1_text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  border: 1px solid #F5FAFF;
+  background: #F5FAFF;
+  width: 248px;
+  border-radius: 8px;
+}
+.container_list_items_li1_text_title {
+  font-family: "Yekan Bakh FaNum";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 25px;
+  color: #007BFF;
+}
+.container_list_items_li2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.container_list_items_li2_text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  padding: 2px 20px 2px 20px;
+  background: #F5FAFF;
+  border-radius: 8px;
+}
+.container_list_items_li2_text_title {
+  font-family: "Yekan Bakh FaNum";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 25px;
+  color: #141414;
+}
+.container_list_items_li3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.container_list_items_li3_text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  padding: 2px 20px 2px 20px;
+  background: #F5FAFF;
+  border-radius: 8px;
+}
+.container_list_items_li3_text_title {
+  font-family: "Yekan Bakh FaNum";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 25px;
+  color: #141414;
+}
+.container_list_items_li4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.container_list_items_li4_text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  padding: 2px 20px 2px 20px;
+  background: #F5FAFF;
+  border-radius: 8px;
+}
+.container_list_items_li4_text_title {
+  font-family: "Yekan Bakh FaNum";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 25px;
+  color: #141414;
+}
+.container_list_items_li5 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.container_list_items_li5_text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  padding: 2px 20px 2px 20px;
+  background: #F5FAFF;
+  border-radius: 8px;
+}
+.container_list_items_li5_text_title {
+  font-family: "Yekan Bakh FaNum";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 25px;
+  color: #141414;
+}
+.container_list_items_li6 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.container_list_items_li6_text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  padding: 2px 20px 2px 20px;
+  background: #F5FAFF;
+  border-radius: 8px;
+}
+.container_list_items_li6_text_title {
+  font-family: "Yekan Bakh FaNum";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 25px;
+  color: #141414;
+}
+.container_list_items_li7 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.container_list_items_li7_text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  padding: 2px 20px 2px 20px;
+  background: #F5FAFF;
+  border-radius: 8px;
+}
+.container_list_items_li7_text_title {
+  font-family: "Yekan Bakh FaNum";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 25px;
+  color: #141414;
+}
+.container_options {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+  margin-top: 270px;
+}
+.container_options_btn {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin: 0 auto;
+  padding: 6px 10px;
+  gap: 30px;
+  background: #F7F7F7;
+  border-radius: 8px;
+}
+.container_options_btn_light {
+  font-family: "Yekan Bakh FaNum";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 15px;
+  gap: 12px;
+  background: #FFFFFF;
+  border-radius: 6px;
+}
+.container_options_btn_dark {
+  font-family: "Yekan Bakh FaNum";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 15px;
+}
+.container_options_exit {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+.container_options_exit_title {
+  font-family: "Yekan Bakh";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  color: #525252;
+}/*# sourceMappingURL=sidebarList.css.map */
