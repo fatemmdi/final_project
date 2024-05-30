@@ -323,7 +323,7 @@ button {
   margin: 0 auto;
 }
 .main_container_box {
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 .main_container_box_new {
   display: flex;
@@ -437,6 +437,21 @@ button {
   font-size: 14px;
   line-height: 22px;
   color: #727272;
+}
+.main_container_box_new_icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 3px 5px;
+  gap: 5px;
+  background: #FFFFFF;
+  border: 1px solid #EBEDEF;
+  box-shadow: 0px 12px 24px -6px #E1E0E5;
+  border-radius: 8px;
+  position: relative;
+  right: 540px;
+  top: -70px;
 }
 .main_container_tasks {
   display: flex;
