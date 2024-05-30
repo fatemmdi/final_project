@@ -24,3 +24,8 @@
     margin: 0 auto;
     max-width: 360px;
 }
+
+@mixin container_todolist {
+    margin: 0 auto;
+    max-width: 560px;
+}

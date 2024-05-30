@@ -91,7 +91,7 @@
                         font-weight: $Bold ;
                         font-size: 16px;
                         line-height: 25px;
-                        color: #007BFF;                        
+                        color: $to_do_list_title;                        
                     }
                 }
             }
@@ -321,6 +321,193 @@
                 line-height: 22px;
                 color: #525252;                
             }
+        }
+    }
+}
+
+.main_container{
+    // @include container_todolist;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 40px;
+    padding: 60px 500px 50px 80px;
+
+    &_title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;   
+        gap: 5px;   
+        
+        &_h3{
+            font-family: 'Yekan Bakh FaNum';
+            font-style: normal;
+            font-weight: $Extra_Bold;
+            font-size: 20px;
+            line-height: 31px;
+            color:$text_color_2;
+            margin: 0 auto;     
+        }
+
+        &_h5{
+            font-family: 'Yekan Bakh FaNum';
+            font-style: normal;
+            font-weight: $Normal;
+            font-size: 12px;
+            line-height: 22px;
+            color: $to_do_list_discription;  
+            margin: 0 auto;       
+        }
+    }
+
+    &_box {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+        border: 1px;
+        padding: 14px 16px 14px 450px;
+        border: 1px dashed #CCCCCC;
+        border-radius: 10px;        
+        // &_icon{}
+
+        &_text{
+            font-family: 'Yekan Bakh FaNum';
+            font-style: normal;
+            font-weight: $Bold;
+            font-size: 16px;
+            line-height: 25px;
+            text-align: right;
+            color: $to_do_list_title;            
+        }
+    }
+
+    &_img{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 120px;
+        gap: 24px; 
+
+        // &_image{}
+
+        &_text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 4px;
+            &_caption{
+                font-family: 'Yekan Bakh FaNum';
+                font-style: normal;
+                font-weight: $Extra_Bold;
+                font-size: 16px;
+                line-height: 25px;
+                color: $neutral-color-4;                
+            }
+
+            &_feagure{
+                font-family: 'Yekan Bakh FaNum';
+                font-style: normal;
+                font-weight: $Semi_Bold;
+                font-size: 14px;
+                line-height: 22px;
+                color: $neutral-color-5;                
+            }
+        }
+    }
+
+    &_tasks{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 16px;
+        
+        &_title{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            &_h4{
+                font-family: 'Yekan Bakh FaNum';
+                font-style: normal;
+                font-weight: $Extra_Bold;
+                font-size: 20px;
+                line-height: 31px;
+                color: $text_color_2;                
+            }
+
+            &_h6{
+                font-family: 'Yekan Bakh FaNum';
+                font-style: normal;
+                font-weight: $Normal;
+                font-size: 14px;
+                line-height: 22px;
+                color: $to_do_list_discription;                
+            }
+        }
+
+        &_done{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 24px 20px 24px 24px;
+            gap: 206px;
+            background: $on-primery-light-color;
+            border: 1px solid #E9E9E9;
+            border-radius: 12px;
+            width: 650px;
+       
+
+            &_check{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                align-items: flex-start;
+                gap: 16px;
+                // background-color: #525252;
+
+                &_input{
+                    -webkit-appearance: none;
+                    width: 18px;
+                    height: 18px;
+                    border: 1px solid $neutral-color-5;
+                    border-radius: 5px;
+                    vertical-align: sub;
+                    outline: none;
+                }
+                
+                
+                &_input:checked{
+                    background-color: $to_do_list_title;
+                }
+
+                &_p {
+                    font-family: 'Yekan Bakh FaNum';
+                    font-style: normal;
+                    font-weight: $Semi_Bold;
+                    font-size: 16px;
+                    line-height: 25px;
+                    color: $neutral-color-2;
+                    text-decoration-line: line-through;                    
+                  }
+    
+            }
+
+            // &_line{
+            //     border-right: 5px solid #FFAF37;
+            //     padding: 8px 0 0 8px;  
+            //     border-radius: 0 8px 8px 0;
+            // }
+
+            // &_icon{
+            // }
         }
     }
 }
