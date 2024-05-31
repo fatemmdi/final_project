@@ -296,7 +296,7 @@ button {
   align-items: flex-end;
   gap: 40px;
   padding: 60px 500px 50px 80px;
-  height: 1024px;
+  max-height: 1024px;
   overflow: hidden;
 }
 .main_container_title {
@@ -334,7 +334,27 @@ button {
   align-items: flex-end;
   gap: 10px;
 }
-.main_container_box_new_choosetag {
+.main_container_box_new_add {
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  padding: 14px 16px 14px 450px;
+  border: 1px dashed #CCCCCC;
+  border-radius: 10px;
+}
+.main_container_box_new_add_icon {
+  position: relative;
+  top: 6px;
+}
+.main_container_box_new_add_text {
+  font-family: "Yekan Bakh FaNum";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 25px;
+  color: #007BFF;
+}
+.main_container_box_new_window {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -345,10 +365,12 @@ button {
   border-radius: 12px;
   margin-top: -50px;
   width: 632px;
-  height: 286px;
-  margin-top: 10px;
+  height: 285px;
+  position: absolute;
+  top: 205px;
+  z-index: 1;
 }
-.main_container_box_new_choosetag_body {
+.main_container_box_new_window_body {
   padding: 20px 15px 20px 290px;
   display: flex;
   flex-direction: column;
@@ -359,14 +381,14 @@ button {
   height: 70%;
   width: 100%;
 }
-.main_container_box_new_choosetag_body_titles {
+.main_container_box_new_window_body_titles {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
   gap: 8px;
 }
-.main_container_box_new_choosetag_body_titles_span1 {
+.main_container_box_new_window_body_titles_span1 {
   font-family: "Yekan Bakh FaNum";
   font-style: normal;
   font-weight: 700;
@@ -374,7 +396,7 @@ button {
   line-height: 25px;
   color: #7D7D7F;
 }
-.main_container_box_new_choosetag_body_titles_span2 {
+.main_container_box_new_window_body_titles_span2 {
   font-family: "Yekan Bakh FaNum";
   font-style: normal;
   font-weight: 400;
@@ -382,7 +404,7 @@ button {
   line-height: 22px;
   color: #AFAEB2;
 }
-.main_container_box_new_choosetag_body_tags {
+.main_container_box_new_window_body_tags {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -393,7 +415,7 @@ button {
   border-radius: 4px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-.main_container_box_new_choosetag_body_tags_name {
+.main_container_box_new_window_body_tags_name {
   font-family: "Yekan Bakh FaNum";
   font-style: normal;
   font-weight: 600;
@@ -401,58 +423,7 @@ button {
   line-height: 22px;
   color: #AFAEB2;
 }
-.main_container_box_new_choosetag_body_options {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  gap: 10px;
-  background: #FFFFFF;
-  border: 1px solid #EBEDEF;
-  box-shadow: 0px 12px 24px -6px rgba(20, 20, 25, 0.06);
-  border-radius: 8px;
-}
-.main_container_box_new_choosetag_body_options_low {
-  padding: 2px 8px;
-  gap: 8px;
-  background: #C3FFF1;
-  border-radius: 4px;
-  font-family: "Yekan Bakh FaNum";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 19px;
-  color: #11A483;
-}
-.main_container_box_new_choosetag_body_options_avg {
-  padding: 2px 8px;
-  gap: 8px;
-  background: #FFEFD6;
-  border-radius: 4px;
-  font-family: "Yekan Bakh FaNum";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 19px;
-  color: #FFAF37;
-}
-.main_container_box_new_choosetag_body_options_high {
-  padding: 2px 8px;
-  gap: 8px;
-  background: #FFE2DB;
-  border-radius: 4px;
-  font-family: "Yekan Bakh FaNum";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 19px;
-  color: #FF5F37;
-}
-.main_container_box_new_choosetag_body_options_line {
-  color: #EBEDEF;
-}
-.main_container_box_new_choosetag_footer {
+.main_container_box_new_window_footer {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
@@ -460,7 +431,7 @@ button {
   width: 100%;
   border-top: 1px solid #E9E9E9;
 }
-.main_container_box_new_choosetag_footer_btn {
+.main_container_box_new_window_footer_btn {
   padding: 6px 16px;
   background: #007BFF;
   opacity: 60%;
@@ -558,6 +529,21 @@ button {
   line-height: 22px;
   color: #727272;
 }
+.main_container_box_new_icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 3px 5px;
+  gap: 5px;
+  background: #FFFFFF;
+  border: 1px solid #EBEDEF;
+  box-shadow: 0px 12px 24px -6px #E1E0E5;
+  border-radius: 8px;
+  position: relative;
+  right: 540px;
+  top: -70px;
+}
 .main_container_tasks {
   display: flex;
   flex-direction: column;
@@ -626,4 +612,4 @@ button {
   line-height: 25px;
   color: #323233;
   text-decoration-line: line-through;
-}/*# sourceMappingURL=sidebarList2.css.map */
+}/*# sourceMappingURL=todolisttags.css.map */
