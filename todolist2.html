@@ -4,9 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/sidebarList2.css">
+    <!-- <link rel="stylesheet" href="./style/todolisttags.css" -->
     <title>project</title>
 </head>
 <body class="body">
+    <header>
+        <div class="container_header">
+            <div class="container_header_menu">
+                <a href="#" class="container_header_menu_list">کوئرا لیست</a>
+                <span class="container_header_menu_hamberger">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 7H21" stroke="#292D32" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M3 12H21" stroke="#292D32" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M3 17H21" stroke="#292D32" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>                        
+                </span>
+            </div>
+        </div>
+    </header>
+
+
     <aside dir="rtl">
         <div class="container">
             <div class="container_profile">
@@ -152,7 +169,7 @@
                             </defs>
                             </svg>                            
                     </span>
-                    <span class="container_options_exit_tilte">خروج</span>
+                    <a class="container_options_exit_title" href="#">خروج</a>
                 </div>
             </div>
         </div>
@@ -162,22 +179,40 @@
 
     <main>
         <div class="main_container">
-            <div class="main_container_title">
+      <!-- -----hi responsive----- -->
+            <div class="main_container_profile">
+                <div class="main_container_profile_division">
+                    <div class="main_container_profile_division_text" dir="rtl">
+                        <span class="main_container_profile_division_text_name">سلام، رویا</span>
+                        <span class="main_container_profile_division_text_date">سه‌شنبه، ۵ بهمن ۱۴۰۲</span>
+                    </div>
+                    <div class="main_container_profile_division_img">
+                        <img class="main_container_profile_division_img_1" alt="user" src="./images/roya.png">
+                    </div>
+                </div>
+                <div  class="main_container_profile_line">
+                    <svg width="328" height="1" viewBox="0 0 328 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="4.37114e-08" y1="0.5" x2="328" y2="0.500029" stroke="#F5F6F8"/>
+                        </svg>                    
+                </div>
+            </div>
+            <!-- -----hi responsive----- -->
+            <div class="main_container_title" dir="rtl">
                 <h3 class="main_container_title_h3">تسک‌های امروز</h3>
                 <h5 class="main_container_title_h5">تسک را باید انجام دهید</h5>
             </div>
             <div class="main_container_box">
                 <div class="main_container_box_new">
                   <!-- ----------add new--1 2 3------------ -->
-                    <!-- <div class="main_container_box_new_add">
-                        <span class="main_container_box_new_add_text">افزودن وظیفه جدید</span>
+                    <div class="main_container_box_new_add">
+                        <button class="main_container_box_new_add_text">افزودن وظیفه جدید</button>
                         <span class="main_container_box_new_add_icon">
                             <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M6 12.5H18" stroke="#007BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M12 18.5V6.5" stroke="#007BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>                        
                         </span>
-                    </div> -->
+                    </div>
                     <!-- ----------add new window 4-------------- -->
                     <!-- <div class="main_container_box_new_window">
                         <div class="main_container_box_new_window_body">
@@ -186,7 +221,7 @@
                                 <span class="main_container_box_new_window_body_titles_span2">توضیحات</span>
                             </div>
                             <div class="main_container_box_new_window_body_tags">
-                                <span class="main_container_box_new_window_body_tags_name">تگ‌ها</span>
+                                <button class="main_container_box_new_window_body_tags_name">تگ‌ها</button>
                                 <span class="main_container_box_new_window_body_tags_icon">
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M3.51661 2.58331H13.0499C13.6166 2.58331 14.325 2.97498 14.625 3.45831L18.1083 9.02498C18.4416 9.56665 18.4083 10.4166 18.025 10.925L13.7083 16.675C13.4 17.0833 12.7333 17.4166 12.225 17.4166H3.51661C2.05828 17.4166 1.17498 15.8166 1.94165 14.575L4.24995 10.8833C4.55828 10.3916 4.55828 9.59165 4.24995 9.09998L1.94165 5.40831C1.17498 4.18331 2.06661 2.58331 3.51661 2.58331Z" stroke="#AFAEB2" stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -199,33 +234,65 @@
                         </div>
                     </div> -->
                     <!-- ----- add new window 4---------- -->
-                    <div class="main_container_box_new_choosetag">
+
+                    <!-- --------choose tag 5------ -->
+                    <!-- <div class="main_container_box_new_choosetag">
                         <div class="main_container_box_new_choosetag_body">
                             <div class="main_container_box_new_choosetag_body_titles">
-                                <span class="main_container_box_new_choosetag_body_titles_span1">نام تسک</span>
-                                <span class="main_container_box_new_choosetag_body_titles_span2">توضیحات</span>
+                                <input type="text" placeholder="نام تسک" class="main_container_box_new_choosetag_body_titles_input1">
+                                <input type="text" placeholder="توضیحات" class="main_container_box_new_choosetag_body_titles_input2">
                             </div>
                             <div class="main_container_box_new_choosetag_body_tags">
-                                <span class="main_container_box_new_choosetag_body_tags_name">تگ‌ها</span>
+                                <button class="main_container_box_new_choosetag_body_tags_name">تگ‌ها</button>
                                 <span class="main_container_box_new_choosetag_body_tags_icon">
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect width="20" height="20" transform="matrix(0 1 -1 0 20 0)" fill="white"/>
-                                        <path d="M17.418 3.51661V13.0499C17.418 13.6166 17.0263 14.325 16.543 14.625L10.9763 18.1083C10.4346 18.4416 9.58464 18.4083 9.0763 18.025L3.3263 13.7083C2.91797 13.4 2.58464 12.7333 2.58464 12.225V3.51661C2.58464 2.05828 4.18464 1.17498 5.4263 1.94165L9.11797 4.24995C9.60963 4.55828 10.4096 4.55828 10.9013 4.24995L14.593 1.94165C15.818 1.17498 17.418 2.06661 17.418 3.51661Z" fill="#AFAEB2" stroke="#AFAEB2" stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>                                                                             
+                                        <path d="M3.51661 2.58331H13.0499C13.6166 2.58331 14.325 2.97498 14.625 3.45831L18.1083 9.02498C18.4416 9.56665 18.4083 10.4166 18.025 10.925L13.7083 16.675C13.4 17.0833 12.7333 17.4166 12.225 17.4166H3.51661C2.05828 17.4166 1.17498 15.8166 1.94165 14.575L4.24995 10.8833C4.55828 10.3916 4.55828 9.59165 4.24995 9.09998L1.94165 5.40831C1.17498 4.18331 2.06661 2.58331 3.51661 2.58331Z" stroke="#AFAEB2" stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                                                   
                                 </span>
                             </div>
                             <div class="main_container_box_new_choosetag_body_options">
-                                <span class="main_container_box_new_choosetag_body_options_high">بالا</span>
+                                <label for="tagshigh" class="main_container_box_new_choosetag_body_options_highlabel">بالا</label>
+                                <input class="main_container_box_new_choosetag_body_options_highinput" type="radio" name="tags" id="tagshigh">
+
+                                <span class="main_container_box_new_choosetag_body_options_line">|</span> 
+
+                                <label for="tagsavg" class="main_container_box_new_choosetag_body_options_avglabel">متوسط</label>
+                                <input class="main_container_box_new_choosetag_body_options_avginput" type="radio" name="tags" id="tagsavg">
+
                                 <span class="main_container_box_new_choosetag_body_options_line">|</span>
-                                <span class="main_container_box_new_choosetag_body_options_avg">متوسط</span>
-                                <span class="main_container_box_new_choosetag_body_options_line">|</span>
-                                <span class="main_container_box_new_choosetag_body_options_low">پایین</span>
+
+                                <label for="tagslow" class="main_container_box_new_choosetag_body_options_lowlabel">پایین</label>
+                                <input class="main_container_box_new_choosetag_body_options_lowinput" type="radio" name="tags" id="tagslow">
                             </div>
                         </div>
                         <div class="main_container_box_new_choosetag_footer">
                             <button class="main_container_box_new_choosetag_footer_btn">اضافه کردن تسک</button>
                         </div>
-                    </div>
+                    </div> -->
+                      <!-- --------choose tag 5------ -->
+
+                      <!-- ----------new activity-------- -->
+                    <!-- <div class="main_container_box_new_activity">
+                        <div class="main_container_box_new_activity_body">
+                            <div class="main_container_box_new_activity_body_titles">
+                                <span class="main_container_box_new_activity_body_titles_span1">جلسه با مدیر محصول جدید</span>
+                                <span class="main_container_box_new_activity_body_titles_span2">بررسی جوانب طراح محصول جدید، در گفت و گو با مدیران برتر</span>
+                            </div>
+                            <div class="main_container_box_new_activity_body_tag">
+                                <span class="main_container_box_new_activity_body_tag_name">بالا</button>
+                                <span class="main_container_box_new_activity_body_tag_icon">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.66406 13.3334L13.3307 6.66675" stroke="#323233" stroke-width="0.999925" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M13.3307 13.3334L6.66406 6.66675" stroke="#323233" stroke-width="0.999925" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                                      
+                                </span>
+                            </div>
+                        </div>
+                        <div class="main_container_box_new_activity_footer">
+                            <button class="main_container_box_new_activity_footer_btn">اضافه کردن تسک</button>
+                        </div>
+                    </div> -->
+                 <!-- ----------new activity-------- -->
 
                     <!-- task 3,4,5,6-->
                     <div class="main_container_box_new_task">
@@ -324,13 +391,13 @@
                     <!-- =---------new card----- -->
                 </div>
 <!-- -------------img 1--------------------- -->
-                <!-- <div class="main_container_img">
+                <div class="main_container_img">
                     <img class="main_container_img_image" alt="image" src="./images/task.png">
                     <div class="main_container_img_text">
                         <div class="main_container_img_text_caption">چه کارهایی امروز برای انجام داری؟</div>
                         <div class="main_container_img_text_feagure">میتونی الان تسک‌هاتو اینجا بنویسی و برنامه ریزی رو شروع کنی</div>
                     </div>
-                </div> -->
+                </div>
 <!-- -------------img 1--------------------- -->
             </div>
             <div class="main_container_tasks">

@@ -279,9 +279,10 @@ button {
   justify-content: flex-start;
   align-items: center;
   gap: 15px;
+  background-color: #007BFF;
 }
 .container_options_exit_title {
-  font-family: "Yekan Bakh";
+  font-family: "Yekan Bakh FaNum";
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
