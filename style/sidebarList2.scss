@@ -481,6 +481,66 @@
         }
     }
 
+    // &_img{
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: center;
+    //     align-items: center;
+    //     margin: 0 120px;
+    //     gap: 24px; 
+    //     @media screen and (min-width: 360px) and (max-width: 480px) {
+    //         max-width: 320px;
+    //         margin: 0 auto;
+    //         gap: 12px;
+    //     }
+
+    //     &_image{
+    //         @media screen and (min-width: 360px) and (max-width: 480px) {
+    //             // margin: 0 auto;
+    //             max-width: 320px;
+    //             height: auto;
+    //             width: 60%;           
+    //         }
+    //     }
+
+    //     &_text{
+    //         display: flex;
+    //         flex-direction: column;
+    //         justify-content: center;
+    //         align-items: center;
+    //         gap: 4px;
+    //         // @media screen and (min-width: 360px) and (max-width: 480px) {
+    //         //     margin: 0 auto;       
+    //         // }          
+    //         &_caption{
+    //             font-family: 'Yekan Bakh FaNum';
+    //             font-style: normal;
+    //             font-weight: $Extra_Bold;
+    //             font-size: 16px;
+    //             line-height: 25px;
+    //             color: $neutral-color-4;    
+    //             @media screen and (min-width: 360px) and (max-width: 480px) {
+    //                 font-size: 16px;
+    //                 line-height: 24px;         
+    //             }            
+    //         }
+
+    //         &_feagure{
+    //             font-family: 'Yekan Bakh FaNum';
+    //             font-style: normal;
+    //             font-weight: $Semi_Bold;
+    //             font-size: 14px;
+    //             line-height: 22px;
+    //             color: $neutral-color-5;  
+    //             @media screen and (min-width: 360px) and (max-width: 480px) {
+    //                 font-size: 14px;
+    //                 line-height: 21px;    
+    //                 text-align: center;     
+    //             }                   
+    //         }
+    //     }
+    // }
+
     &_box {
         margin-bottom: 20px;
         @media screen and (min-width: 360px) and (max-width: 480px) {
