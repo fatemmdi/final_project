@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/sidebarList2.css">
+    <script src="./main.js" defer></script>
     <!-- <link rel="stylesheet" href="./style/todolisttags.css" -->
     <title>project</title>
 </head>
@@ -26,6 +27,15 @@
 
     <aside dir="rtl">
         <div class="container">
+            <div class="container_head">
+                <span class="container_head_name">کوئرا لیست</span>
+                <span class="container_head_close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 17L17.0003 6.99966" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M17.0003 17L7 6.99966" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                        
+                </span>
+            </div>
             <div class="container_profile">
                 <div class="container_profile_img">
                     <img class="container_profile_img_1" alt="user" src="./images/roya.png">
@@ -214,11 +224,11 @@
                         </span>
                     </div>
                     <!-- ----------add new window 4-------------- -->
-                    <!-- <div class="main_container_box_new_window">
+                    <div class="main_container_box_new_window">
                         <div class="main_container_box_new_window_body">
                             <div class="main_container_box_new_window_body_titles">
-                                <span class="main_container_box_new_window_body_titles_span1">نام تسک</span>
-                                <span class="main_container_box_new_window_body_titles_span2">توضیحات</span>
+                                <input type="text" placeholder="نام تسک" class="main_container_box_new_window_body_titles_input1">
+                                <textarea placeholder="توضیحات" class="main_container_box_new_window_body_titles_input2"></textarea>
                             </div>
                             <div class="main_container_box_new_window_body_tags">
                                 <button class="main_container_box_new_window_body_tags_name">تگ‌ها</button>
@@ -228,11 +238,27 @@
                                         </svg>                                        
                                 </span>
                             </div>
+                         
+                            <div class="main_container_box_new_window_body_options">
+                                <label for="tagshigh" class="main_container_box_new_window_body_options_highlabel">بالا</label>
+                                <input class="main_container_box_new_window_body_options_highinput" type="radio" name="tags" id="tagshigh" value="high">
+
+                                <span class="main_container_box_new_window_body_options_line">|</span> 
+
+                                <label for="tagsavg" class="main_container_box_new_window_body_options_avglabel">متوسط</label>
+                                <input class="main_container_box_new_window_body_options_avginput" type="radio" name="tags" id="tagsavg" value="avg">
+
+                                <span class="main_container_box_new_window_body_options_line">|</span>
+
+                                <label for="tagslow" class="main_container_box_new_window_body_options_lowlabel">پایین</label>
+                                <input class="main_container_box_new_window_body_options_lowinput" type="radio" name="tags" id="tagslow" value="low">
+                            </div>
+                      
                         </div>
                         <div class="main_container_box_new_window_footer">
                             <button class="main_container_box_new_window_footer_btn">اضافه کردن تسک</button>
                         </div>
-                    </div> -->
+                    </div>
                     <!-- ----- add new window 4---------- -->
 
                     <!-- --------choose tag 5------ -->
@@ -267,12 +293,18 @@
                         </div>
                         <div class="main_container_box_new_choosetag_footer">
                             <button class="main_container_box_new_choosetag_footer_btn">اضافه کردن تسک</button>
+                            <button class="main_container_box_new_choosetag_footer_close">
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.99414 16.0027L15.9993 5.9975" stroke="#9E9E9E" stroke-width="1.50067" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M15.9993 16.0027L5.99414 5.9975" stroke="#9E9E9E" stroke-width="1.50067" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                    
+                            </button>
                         </div>
                     </div> -->
                       <!-- --------choose tag 5------ -->
 
                       <!-- ----------new activity-------- -->
-                    <!-- <div class="main_container_box_new_activity">
+                    <div class="main_container_box_new_activity">
                         <div class="main_container_box_new_activity_body">
                             <div class="main_container_box_new_activity_body_titles">
                                 <span class="main_container_box_new_activity_body_titles_span1">جلسه با مدیر محصول جدید</span>
@@ -290,12 +322,18 @@
                         </div>
                         <div class="main_container_box_new_activity_footer">
                             <button class="main_container_box_new_activity_footer_btn">اضافه کردن تسک</button>
+                            <button class="main_container_box_new_activity_footer_close">
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.99414 16.0027L15.9993 5.9975" stroke="#9E9E9E" stroke-width="1.50067" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M15.9993 16.0027L5.99414 5.9975" stroke="#9E9E9E" stroke-width="1.50067" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                    
+                            </button>
                         </div>
-                    </div> -->
+                    </div>
                  <!-- ----------new activity-------- -->
 
                     <!-- task 3,4,5,6-->
-                    <!-- <div class="main_container_box_new_task">
+                    <div class="main_container_box_new_task">
                         <span class="main_container_box_new_task_icon">
                             <svg width="4" height="18" viewBox="0 0 4 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="2" cy="2" r="2" fill="#525252"/>
@@ -311,9 +349,9 @@
                             </div>
                             <div class="main_container_box_new_task_text_discription">جلسه با محسن یگانه و مریم جلالی</div>
                         </div>
-                    </div>  -->
+                    </div> 
                     <!-- ----------------------- -->
-                    <!-- <div class="main_container_box_new_task">
+                    <div class="main_container_box_new_task">
                         <span class="main_container_box_new_task_icon">
                             <svg width="4" height="18" viewBox="0 0 4 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="2" cy="2" r="2" fill="#525252"/>
@@ -329,9 +367,9 @@
                             </div>
                             <div class="main_container_box_new_task_text_discription">سوپرمارکت یاران دریایی</div>
                         </div>
-                    </div>  -->
+                    </div> 
                     <!-- ---------- -->
-                    <!-- <div class="main_container_box_new_task">
+                    <div class="main_container_box_new_task">
                         <span class="main_container_box_new_task_icon">
                             <svg width="4" height="18" viewBox="0 0 4 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="2" cy="2" r="2" fill="#525252"/>
@@ -347,10 +385,10 @@
                             </div>
                             <div class="main_container_box_new_task_text_discription">جلسه با محسن یگانه و مریم جلالی</div>
                         </div>
-                    </div>  -->
+                    </div> 
                     <!-- -------task 3 & 4 & 5 & 6-------- -->
                     <!-- ---------------edit or delete 2 & 3---------- -->
-                    <!-- <div class="main_container_box_new_icons">
+                    <div class="main_container_box_new_icons">
                         <button class="main_container_box_new_icons_del">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M4 7H20M5 7L6 19C6 19.5304 6.21071 20.0391 6.58579 20.4142C6.96086 20.7893 7.46957 21 8 21H16C16.5304 21 17.0391 20.7893 17.4142 20.4142C17.7893 20.0391 18 19.5304 18 19L19 7M9 7V4C9 3.73478 9.10536 3.48043 9.29289 3.29289C9.48043 3.10536 9.73478 3 10 3H14C14.2652 3 14.5196 3.10536 14.7071 3.29289C14.8946 3.48043 15 3.73478 15 4V7M10 12L14 16M14 12L10 16" stroke="#5C5F61" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -367,10 +405,10 @@
                                 <path d="M16 4.99998L19 7.99998M20.385 6.58499C20.7788 6.19114 21.0001 5.65697 21.0001 5.09998C21.0001 4.543 20.7788 4.00883 20.385 3.61498C19.9912 3.22114 19.457 2.99988 18.9 2.99988C18.343 2.99988 17.8088 3.22114 17.415 3.61498L9 12V15H12L20.385 6.58499Z" stroke="#5C5F61" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                         </button>
-                    </div> -->
+                    </div>
                     <!-- --------new icon--------- -->
-                    <!-- =---------new card--3--- -->
-                    <!-- <div class="main_container_box_new_card">
+                    <!-- =---------edit card--3--- -->
+                    <div class="main_container_box_new_card">
                         <div class="main_container_box_new_card_body">
                             <span class="main_container_box_new_card_body_title">تماس با جمشید</span>
                             <span class="main_container_box_new_card_body_discription">باید در مورد کارهای باقیمانده از پروژه قبلی صحبت کنیم</span>
@@ -387,17 +425,17 @@
                         <div class="main_container_box_new_card_footer">
                             <button class="main_container_box_new_card_footer_btn">ویرایش تسک</button>
                         </div>
-                    </div> -->
+                    </div>
                     <!-- =---------new card----- -->
                 </div>
 <!-- -------------img 1--------------------- -->
-                <!-- <div class="main_container_img">
+                <div class="main_container_img">
                     <img class="main_container_img_image" alt="image" src="./images/task.png">
                     <div class="main_container_img_text">
                         <div class="main_container_img_text_caption">چه کارهایی امروز برای انجام داری؟</div>
                         <div class="main_container_img_text_feagure">میتونی الان تسک‌هاتو اینجا بنویسی و برنامه ریزی رو شروع کنی</div>
                     </div>
-                </div> -->
+                </div>
 <!-- -------------img 1--------------------- -->
             </div>
             <div class="main_container_tasks">
