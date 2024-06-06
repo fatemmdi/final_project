@@ -56,14 +56,14 @@ function CreateBtnHandler(){
 // --------new task created-------
 
 document.addEventListener('DOMContentLoaded',newTaskCards);
-const inProgressToDoListDiv = document.querySelector("main_container_box_new_task");
+const inProgressToDoListDiv = document.querySelector(".main_container_box_new_task");
 
 function newTaskCards(){
     const inProgressToDoList = JSON.parse(localStorage.getItem('inProgressToDo'));
 
     inProgressToDoList.forEach(task => {
         const newtask = document.createElement('div');
-        newtask.classList.add("main_container_box_new_task");
+        newtask.classList.add(".main_container_box_new_task");
         newtask.innerHTML = `
         <span class="main_container_box_new_task_icon">
         <svg width="4" height="18" viewBox="0 0 4 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -89,22 +89,43 @@ function newTaskCards(){
 // --------------------ادامه دارد-----------------------
 // --------------------add btn-------------------
 
-const addBtn = document.querySelector("main_container_box_new_add_text");
-const newWindow = document.querySelector("main_container_box_new_window");
+const addBtn = document.querySelector(".main_container_box_new_add_text");
+const newWindow = document.querySelector(".main_container_box_new_window");
 
 addBtn.addEventListener("click",addBtnHandler);
 
 function addBtnHandler(){
 
-    addBtn.style.display = 'none';
-    newWindow.style.display = 'flex';
+    // addBtn.style.display = 'none';
+    // newWindow.style.display = 'flex';
 
-    // if(addBtn.style.display === "flex"){
-    //     newWindow.style.display = "none";
+    if(addBtn.style.display === "flex"){
+        newWindow.style.display = "none";
       
-    // }else{
-    //     newWindow.style.display = "flex";
-    // }
+    }else{
+        newWindow.style.display = "flex";
+    }
 }
 // ---------------------------------
 
+// ------------edit & delete-------------
+
+const editOrDElete = document.querySelector(".main_container_box_new_icons");
+const icon = document.querySelector(".main_container_box_new_task_icon");
+
+icon.addEventListener('click',editHandler);
+
+function editHandler (){
+
+    editOrDElete.style.display = 'flex';
+}
+
+const editBtn = document.querySelector(".main_container_box_new_icons_edit");
+const editTask = document.querySelector(".main_container_box_new_card");
+
+editBtn.addEventListener('click',editTaskHandler);
+
+function editTaskHandler (){
+
+    editTask.style.display = 'flex';
+}
